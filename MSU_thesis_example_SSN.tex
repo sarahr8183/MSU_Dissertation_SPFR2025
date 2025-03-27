@@ -1,0 +1,308 @@
+%% Before beginning to type your dissertation, read the formatting guide, 
+%% which can be found at http://grad.msu.edu/etd/docs/formattingguide.pdf
+%% Also get the latest version of msuphddissertation.cls and the template file
+%% at http://www.math.msu.edu/~weil/MSU_Ph.D._Dissertation.zip
+%% Send questions to weil@math.msu.edu
+\documentclass{msuphddissertation_ssn}
+%% Insert packages you wish to use except setspace and subfig. 
+%% Those packages are loaded automatically.
+%% IMPORTANT: Load only those packages you know you will use.
+%% Some packages can cause conflicts resulting in improper formatting.
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\selectlanguage{english}
+\usepackage{lipsum}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{setspace}
+\usepackage{caption}
+\captionsetup[table]{labelsep=space}
+\captionsetup[figure]{labelsep=space}
+\captionsetup[subfigure]{labelformat=parens,labelsep=space,font=small}
+\usepackage{physics}
+\usepackage[version=3]{mhchem} 
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{xfrac}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{cleveref}
+
+
+
+\author{Sarah Pauline Frechette} %% Put your name in full as it is officially recognized by Michigan State University here.
+\title{SPATIAL CONTROL OF NITROGEN DOPED SINGLE CRYSTAL DIAMOND GROWN VIA CHEMICAL VAPOR DEPOSITION} %% Put the title of your dissertation here.
+\unit{Material Science and Engineering - Doctor of Philosophy} %% 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% NOTE %%%%%%%%%%%%%%
+%% PREPARING A DISSERTATION WITH THIS CLASS FILE DOES NOT %%%
+%% GUARANTEE THAT THE GRADUATE SCHOOL WILL APPROVE IT %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% WARNING %%%%%%%%%%%%%%%
+%% The Graduate School requires that all text, except superscripts %%
+%% and subscripts, but including text in imported %%
+%% graphics files be in 12 point. For that reason it's recommended %%
+%% that no text be part of any imported files. %%
+
+%% Once your document has been filed with the Graduate School,
+%% if you wish to produce a version of it whose subscripts and superscripts
+%% are in traditional smaller proportion, remove the "%" sign 
+%% in front of following command. 
+%\DeclareMathSizes{12}{12}{10}{8}
+%% To single space your document, find and remove the 
+%% two commands \begin{doublespace}
+%% and \end{doublespace} below.
+
+\begin{document}
+\begin{otherlanguage}{english}
+\maketitlepage %%This command will produce the title page of your thesis.
+\begin{abstract}
+%put your abstract here
+test text
+\end{abstract}
+
+%% If you wish to have a copyright page, remove the "%" in front of \begin{copyrt}
+%% and remove the "%" in front of \end{copyrt}.
+%% The mandatory form of the Copyright will be generated automatically. 
+%% A copyright statement is optional.
+
+%\begin{copyrt}
+%\end{copyrt}
+
+\begin{dedication} 
+%put your dedication here
+This is my dedication page
+\end{dedication}
+
+%% If you wish to have an acknowledgment, remove the "%" in front of \begin{acknowledgment}
+%% and remove the "%" in front of \end{acknowledgment}
+%\begin{acknowledgment}
+%% Type your acknowledgment here. An acknowledgment is optional.
+%\end{acknowledgment}
+
+%% If you wish to have a preface, remove the "%" in front of \begin{preface}
+%% and remove the "%" in front of \end{preface}. The formatting of
+%% a preface isn't specified.
+%\begin{preface}
+%% Type your preface here. A preface is optional.
+%\end{preface}
+
+\TOC %% This command produces the Table of Contents. DO NOT REMOVE!
+
+%% If your document contains tables, remove the "%" in front of 
+%% the following line.
+%\LOT
+
+%% If your document contains figures, remove the "%" in front of
+%% the following line.
+%\LOF
+
+%% If any of your figures contain color, you must
+%% include the following disclaimer in the caption of your first figure.
+%% "For interpretation of the references to color in this and all other figures, 
+%% the reader is referred to the electronic version of this thesis."
+
+%%%% LIST OF SYMBOLS AND ABBREVIATIONS %%%%
+%% Such a list is possible using the environment
+%% abbreviationskey
+%% here. The list will be included in the TOC as
+%% KEY TO SYMBOLS AND ABBREVIATIONS
+%% To change the name something else, remove the "%" 
+%% from the next line and change "Desired Name" to your choice.
+%\renewcommand{\keyname}{Desired Name}
+%%%%%%%%%%
+
+\newpage
+
+\end{otherlanguage}
+\begin{doublespace}
+
+
+%% Put the body of your dissertation here. 
+%% DO NOT include the bibliography
+\selectlanguage{english}
+\pagenumbering{arabic}
+%input chapter files motivation.tex, etc
+
+\chapter{Background and Introduction}
+\label{ch1}
+\section
+Here are some references! \cite{Demlow2014, Grotjohn2014}
+This is how you reference \Cref{ch1}.
+
+Note: you have to run the following Typeset commands in this order to get the labels and references all correct: 
+\\ pdfLaTex
+\\ BibTex
+\\ pdfLaTex
+\\ pdfLaTex
+\\ you can run them in other orders, but you need BibTex to be run after pdfLaTex has been run once, and you need to run pdfLaTex twice more after to update the TOC, etc
+\section{This is a section}
+\label{a section}
+This is how you reference anything really \Cref{a section}
+
+\begin{table} [ht]
+	\centering
+\begin{tabular}{*{2}{c}}
+\textbf{Property} & \textbf{Approximate Value (at 300K)} \\ \hline \hline \\
+Thermal conductivity & \SI{21.9}{\watt\per\centi\meter\per\kelvin} \\
+Band gap & 5.47 eV \\
+Carrier mobility (electron, Hall effect) & \SI{660}{\centi\meter\square\per\volt\per\second}\\
+Carrier mobility (hole, Hall effect) & \SI{1650}{\centi\meter\square\per\volt\per\second}\\
+Dielectric constant & 5.7 \\
+Breakdown electric field strength & 10-\SI{20}{\mega\volt\per\centi\meter} \\
+Intrinsic resistivity & \SI{1e13}{\ohm\centi\meter} \\
+Mechanical hardness & \SI{90}{\giga\pascal}\\
+Sound propagation velocity & \SI{17.5}{\kilo\meter\per\second}
+\end{tabular}
+	\caption{Some Properties of Single Crystal Diamond \cite{May2000,Teraji2006}, in a table that has numbers with units using the SI package}
+\label{tbl:Properties} %This is how you label a table to reference it
+\end{table}
+
+Here, I reference \Cref{tbl:Properties} and here's an example about equations and variables:
+Johnson \cite{Johnson1965} has shown that the product of the breakdown electric field, $E_B$, and the maximum carrier drift velocity, $v_s$, sets the limit of various transistor parameters for devices made of a specified material. The result is the Johnson figure of merit ($JFOM$), given in \Cref{eq:JFOM}.
+
+\begin{equation}
+	JFOM = \frac{E_B\,v_s}{2\pi}
+	\label{eq:JFOM}
+\end{equation}
+
+The charge carrier transit time cut-off frequency in a transistor is defined by $f_{\text{transit}} = 1/(2\pi \tau_{\text{avg}})$, where $\tau_{\text{avg}}$ is the average time it takes a charge carrier moving at an average velocity $v_{\text{avg}}$ to travel the emitter-to-collector distance 
+
+\subsection{a subsection}
+\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}
+
+			\draw(-7.9,1.8) node{a.};
+			\filldraw[fill=orange!40!white, draw=black] (-7.9,1.4) rectangle(-6,0.3); 
+			\draw (-6.95,1.1) node{Ohmic}; 
+			\draw (-6.95, 0.6) node{contact};
+			\filldraw[fill=black!20!white, draw=black](-4.9,1.4) rectangle(-3,0.3); 
+			\draw (-3.95,1.1) node{Schottky}; 
+			\draw (-3.95,0.6) node{contact};
+			\filldraw[fill=blue!25!white, draw=black] (-7.9,0.3) rectangle(-3,-0.4); 
+			\draw (-5.45,-0.1) node{$p^{-}$-diamond};
+\filldraw[fill=yellow!60!white, draw=black] (-7.9,-0.4) rectangle(-3,-2.1); 
+			\draw (-5.45,-1.25) node{HPHT substrate};
+
+			\draw(-2.5,1.8) node{b.};
+			\filldraw[fill=orange!40!white, draw=black] (-2.5,0.7) rectangle(-0.6,-0.4); 
+			\draw (-1.55,0.4) node{Ohmic}; 
+			\draw (-1.55, -0.1) node{contact};
+			\filldraw[fill=black!20!white, draw=black](0.5,1.4) rectangle(2.4,0.3); 
+			\draw (1.45,1.1) node{Schottky}; 
+			\draw (1.45,0.6) node{contact};
+			\filldraw[fill=blue!25!white, draw=black] (-0.05,0.3) rectangle(2.4,-0.4); 
+			\draw (1.175,-0.1) node{$p^{-}$-diamond};
+			\filldraw[fill=blue!80!white, draw=black] (-2.5,-0.4) rectangle(2.4,-1.1); 
+			\draw (0.05,-0.75) node{$p^{+}$-diamond};
+\filldraw[fill=yellow!60!white, draw=black] (-2.5,-1.1) rectangle(2.4,-2.1); 
+			\draw (0.05,-1.6) node{HPHT substrate};			
+
+			\draw(2.9,1.8) node{c.};
+			\filldraw[fill=black!20!white, draw=black](3.3,1.4) rectangle(7.4,0.7); 
+			\draw (5.35,1.05) node{Schottky contact}; 
+			\filldraw[fill=blue!25!white, draw=black] (2.9,0.7) rectangle(7.8,0.0); 
+			\draw (5.35,0.35) node{$p^{-}$-diamond};
+			\filldraw[fill=blue!80!white, draw=black] (2.9,0.0) rectangle(7.8,-1.4); 
+			\draw (5.35,-0.4) node{thick $p^{+}$-diamond};
+			\draw (5.35,-1) node{growth substrate};
+\filldraw[fill=orange!40!white, draw=black] (3.3,-1.4) rectangle(7.4,-2.1); 
+			\draw (5.35,-1.75) node{Ohmic contact};	
+
+	\end{tikzpicture}
+	\caption{You can draw figures with tikz For interpretation of the references to color in this and all other figures, the reader is referred to the electronic version of this thesis.}
+	\label{fig:diodeArchitectures}
+\end{figure}
+
+
+\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}
+\node(0,0)
+ {\includegraphics[width=0.9\textwidth]{figures/ebandALL3.png}};
+
+			\draw(-7.9,1.5) node{a.};
+			\draw(-7.9,-.4) node{$E_{Fm}$};
+			\draw (-3.45,0.7) node{$E_C$};
+			\draw (-3.45,-0.37) node{$E_F$};
+			\draw (-3.45,-0.8) node{$E_V$};
+			\draw(-7.12,0.08) node{$q\phi_{Bp}$};
+			\draw(-5.2,-1) node{$q\psi_{bi}$};
+			\draw(-4,0.1) node{$q\phi_{p}$};
+
+			\draw(-2.5,1.5) node{b.};
+			\draw(-2.5,-.4) node{$E_{Fm}$};
+			\draw (1.8,0.1) node{$E_C$};
+			\draw (1.8,-0.78) node{$E_F$};
+			\draw (1.8,-1.18) node{$E_V$};
+			\draw(-1.8,0.02) node{$q\phi_{Bp}$};
+			\draw(1,-1.8) node{$q(\psi_{bi}-V_F)$};
+			\draw(0.4,-0.6) node{$qV_F$};
+
+			\draw(2.75,1.5) node{c.};
+			\draw(2.75,-.4) node{$E_{Fm}$};
+			\draw (7.7,1.5) node{$E_C$};
+			\draw (7.7,0.3) node{$E_F$};
+			\draw (7.7,-0.15) node{$E_V$};
+			\draw(3.52,0.02) node{$q\phi_{Bp}$};
+			\draw(5.6,-0.9) node{$q(\psi_{bi} + V_R)$};
+			\draw(7.15,-0.7) node{$qV_R$};
+	\end{tikzpicture}
+\caption{You can also draw over figures with tikz  \emph{Adapted from }\cite{Sze2006} }
+\label{fig:bandbending}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figures/PH.jpg}
+	\caption{Figures can be just pictures though}
+	\label{fig:PH}
+\end{figure}
+
+\chapter{Conclusions}
+ Good luck!
+
+%%%%%%% APPENDICES %%%%%%%%%%
+%% If you wish to include one appendix, remove the "%" from the 
+%% following two lines.
+%\renewcommand{\appname}{APPENDIX}
+%\appendix
+%% To include several appendices, remove the only the "%"
+%% in front of "\appendix".
+
+%% In either cast to start your first appendix, which will be labeled
+%% as Appendix A, just type \chapter{<appendix 1 name>}
+%% and enter the text of the appendix as you would a chapter.
+
+\end{doublespace}
+
+%%%%%% Bibliography %%%%%
+%% A bibliography is required. By default it is called, "Bibliography"
+%% You may use �Literature Cited�, �Works Cited� or �References� 
+%% instead of �Bibliography� if that is the convention in your discipline. 
+%% To do so, place your choice in the empty argument 
+%% of the following command and remove the "%".
+\renewcommand{\bibname}{REFERENCES}
+
+
+\bibliographystyle{unsrt}
+\bibliography{references} %references in references.bib BibTeX file
+%% The bibliography may be made using BibTeX.
+%% To do so the necessary commands must be entered in the 
+%% preamble and here.
+%% If the Bibliography is made from scratch,
+%% remove the "%" in front of "\begin{thebibliography}{???}"
+%% replacing the ??? with the appropriate entry and 
+%% remove the "%" in front of "\end{thebibliography}"
+% \begin{thebibliography}{???}
+%% Enter the bibliography here.
+% \end{thebibliography}
+%% In either case, the bibliography is automatically entered
+%% in the Table of Contents.
+\end{document}
