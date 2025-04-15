@@ -16,6 +16,7 @@
 % Bring in the regular book class
 \LoadClass[12pt,oneside]{book}
 
+
 % Bring in needed packages
 \RequirePackage{ifthen}
 \RequirePackage{setspace}
