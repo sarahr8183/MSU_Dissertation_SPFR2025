@@ -1,37 +1,93 @@
 \chapter{Methods of Sample Characterization}
 \label{chMethods}
+\indent
+This chapter will describe methods of characterization for diamond samples. Because diamond is not thermodynamically favorable at room temperature and pressure, synthetic diamond growth is not straight forward. Thorough characterization of dependent variables is essential in identifying cause-and-effect relationships in the complex system of independent variables that is CVD synthetic diamond growth. First, a discussion of two different methods for measuring the growth rate. Next, methods for characterizing the surface, such as surface roughness via atomic force microscopy (AFM), surface orientation via x-ray diffraction (XRD), and optical microscopy, of the diamond substrate and grown film will be discussed. Lastly, methods for characterizing defect concentrations using Fourier Transform Infrared (FTIR) spectroscopy, Ultra-violet and Visible (UV-Vis) spectroscopy, Raman spectroscopy, and photoluminescent spectroscopy.
 
 \section{Growth rate}
+\label{growthrate}
+\indent
+Growth rate is a valuable dependent variable in synthetic diamond growth. CVD diamond growth occurs primarily in one direction, normal to the diamond seed surface, whereas HPHT diamond growth occurs in all crystalline directions simultaneously. To determine one directional, vertical, growth rate, a linear encoder is used to calculate the thickness before and after growth. To determine total growth rate, the mass of the sample, before and after growth is measured.
+
 \subsection{Vertical Growth Rate via Linear Encoder}
+\label{thickness}
+ Vertical growth rate was determined by thickness measurements before and after deposition. Thickness measurements were taken at the center at each corner of the sample using a Mitutoyo EH-10P linear encoder. The difference between the thickness after deposition ($z_{final}$) and before deposition ($z_{inital}$) was then divided by the length of deposition ($t_{deposition}$) determined the vertical growth rate, as shown in equation \ref{vertGR}.\\
+
+\begin{equation}
+\label{vertGR}
+    Growth Rate_z = \frac{z_{final} - z_{inital}}{t_{deposition}}
+\end{equation}
 
 \subsection{Total Growth Rate via Mass Balance}
+\label{mass}
+Homoepitaxial diamond growth does not only occur in the vertical direction. Lateral outgrowth is also possible. To account for this, the mass of the substrate before deposition and the mass of the substrate and growth layer, combined, after deposition was collected and used to calculate a total volumetric growth rate of the sample. The sample mass was taken using a Mettler Toledo XS105 mass balance. \\
 
+\begin{equation}
+\label{vertGR}
+    Total Growth Rate = \frac{m_{final} - m_{inital}}{t_{deposition}}
+\end{equation}
 
 \section{Surface Condition}
+There are several surface condition variables that contribute to synthetic diamond growth. The
 \subsection{Optical Microscopy}
 \subsubsection{Differential Interference Contrast Microscopy (DICM)}
-Talk about step flow, orange peel, combinations of growth morphologies, and unepitaxial crystallites
+\label{DICM}
+\indent
+Differential interference contrast microscopy (DICM) is an optical microscopy technique that utilizes properties of polarized light to improve the resolution of features in optical microscopy. A Nikon ECLIPSE ME600 microscope was used in this study. Surface features such as polishing lines, etch pits, and step flow growth can be observed using this technique.
+
+\textcolor{red}{Talk about step flow, orange peel, combinations of growth morphologies, and unepitaxial crystallites}
 
 \subsubsection{Birefringence}
+\label{Birefringence}
+\indent
+Birefingece is a technique used to qualitative determine stress in a sample. In this technique, the substrate is placed between two cross polarizers. If the SCD is completely strain free, no light will pass through. In the presence of strain, the polarization of the light incident on the substrate will rotate allowing some light to pass through the second polarizer. 
 
 \subsection{Atomic Force Microscopy (AFM)}
+\label{AFM}
 \indent 
-discuss surface roughness here
+Atomic Force Microscopy (AFM) was used to determine the surface roughness of the substrates. Three 10$\mu$m by 10$\mu$m AFM scans were taken at different locations on the sample. The areal average roughness (SA) was calculated for each scan and the average of the three scans was reported. 
 
+\textcolor{red}{discuss types of surface roughness here (Ra vs Sa vs Rz vs Sz etc)}
 
-\section{Surface Orientation}
+\subsection{Surface Orientation}
+\label{XRD}
+\indent
+The substrate surface orientation can affect growth rate and defect incorporation \textcolor{red}{CITE}.A Rigaku Smartlab X-ray Diffractometer (XRD) was used to measure single crystal diamond surface orientation. In addition to using XRD to confirm the surface orientation, XRD can be used to measure the angle at which the physical surface of the crystal is off with respect to the intended orientation. This angle is called the offcut angle
+
+\textcolor{red}{talk about Braggs law. talk about how the offcut angle is calculated. This will likely need a figure describing all of the angles in the XRD and an crystalline plane and showing surface orientation and intended crystalline plane}
 
 
 \section{Fourier Transform Infrared Spectroscopy}
+\label{FTIR}
+\indent
+A Shimadzu IRTracer-100 Fourier Transform Infrared (FTIR) Spectrometer was the first technique used. The FITR results of the three methane samples did not indicate the presence of defects.
 
+\textcolor{red}{talk about peaks of interest and peak fitting code}
 
 \section{Ultra-violet and Visible Spectroscopy}
+\label{UVVis}
+\indent
+The next technique used to characterize defects was Ultra-Violet and Visible Spectroscopy on a Shimadzu UV-3600 UV-VIS-NIR Spectrophotometer. The results showed low or no absorption at ultra-violet and visible wavelength below the band gap energy, again indicating a low presence of defects.
 
+\textcolor{red}{talk about Luo paper to fit defect peaks}
 
 \section{Raman Spectroscopy}
+\label{Raman}
+\indent
 
 
 \section{Photoluminescence Spectroscopy}
+\label{PL}
+\indent
+Photoluminescent spectroscopy was used to qualitatively compare the quantity of defects, such as the nitrogen vacancy defect and silicon vacancy defect. In this technique, the sample is illuminated using a chosen excitation wavelength, then, a spectrum is taken on the luminescence of the sample to determine the presence of defects.
 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{}
+    \caption{Schematic of PL}
+    \label{fig:placeholder}
+\end{figure}
 
+\section{Electron Paramagnetic Resonance (EPR)}
+\label{EPR}
+\indent
 
