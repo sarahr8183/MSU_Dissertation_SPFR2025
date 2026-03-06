@@ -27,7 +27,8 @@ Homoepitaxial diamond growth does not only occur in the vertical direction. Late
 \end{equation}
 
 \section{Surface Condition}
-There are several surface condition variables that contribute to synthetic diamond growth. The
+There are several surface condition variables that influence synthetic diamond growth. Surface condition can also be used to asses the quality of a deposition. Three methods for evaluating the surface condition will be described in the following section. First, optical is used to identify micron-scale features, such as large polishing features or unepitaxial crystallites, identify growth morphology on grown films, or determine the presence and relative intensity of strain within a substrate. Second, atomic force microscopy is used to identify nanometer-scale feature and quantify surface roughness. Third, x-ray diffraction is used to determine the surface orientation and offcut.
+
 \subsection{Optical Microscopy}
 \subsubsection{Differential Interference Contrast Microscopy (DICM)}
 \label{DICM}
@@ -42,19 +43,54 @@ Deposition temperature affects growth morphology. If deposition temperatures are
 \subsubsection{Birefringence}
 \label{Birefringence}
 \indent
-Birefringece is a technique used to qualitative determine stress in a sample. In this technique, the substrate is placed between two cross polarizers. If the SCD is completely strain free, no light will pass through. In the presence of strain, the polarization of the light incident on the substrate will rotate allowing some light to pass through the second polarizer. 
+Birefringece is a technique used to qualitative determine strain in a sample \cite{Raman1944BirefringenceDiamond,Lang1967CausesDiamond, ProfTolansky1964BirefringenceDiamond}. Strain in can arise from a number of sources. Sources of strain in diamond include: dislocations, lattice parameter variation, precipitates and inclusions, fractures, and plastic deformation \cite{Lang1967CausesDiamond}. The presence of internal strain causes local changes in refractive index which is the source of birefringence \cite{Atkins1968QuantumRotation}.
+
+To measure birefringence, the substrate is placed between two cross polarizers. If the SCD is completely strain free, the optically isotropic crystal will not have an effect on the light and therefore no light will pass through. In the presence of strain, the polarization of the light incident on the substrate will rotate allowing some light to pass through the second polarizer. The amount of internal strain can be qualified by the intensity of the light. In other words, the brighter the region, the more strain present.
 
 \subsection{Atomic Force Microscopy (AFM)}
 \label{AFM}
 \indent 
-Atomic Force Microscopy (AFM) was used to determine the surface roughness of the substrates. Three 10$\mu$m by 10$\mu$m AFM scans were taken at different locations on the sample. The areal average roughness (SA) was calculated for each scan and the average of the three scans was reported. 
+Atomic Force Microscopy (AFM) was used to determine the surface roughness of the substrates. Three 10$\mu$m by 10$\mu$m AFM scans were taken at different locations on the sample. The areal average roughness (SA) was calculated for each scan and the average of the three scans was reported. In this work, a Hitachi AFM5100N
+atomic force microscope equipped with a MikroMasch
+HQ:NSC14/Al tip and operating in non-contact mode was used.
 
-Atomic force microscopy was invented by Binnig et. al. in 1986 \cite{BinnigAtomicMicroscope}. The AFM technology drew principles from profilometry and scanning tunneling microscopy to resolve atomic scale features using cantilever arm with an atomically fine tip 
+Atomic force microscopy was invented by Binnig et. al. in 1986 \cite{BinnigAtomicMicroscope}. The AFM technology drew principles from profilometry and scanning tunneling microscopy to resolve atomic scale features using cantilever arm with an atomically fine tip. The cantilever with an atomically fine tip tracks across the surface producing a two-dimentional profile of vertical height (change in z if considering a Cartesian coordinate system) difference across the horizontal distance traveled (x or y in a Cartesian coordinate system). The atomic scale features include ridges from polishing, morphological features, etch pits, nanofabricated structures, etc. The size, depth, and frequency of features are all elements that contribute to surface roughness. Surface roughness can be calculated in several different ways. Two common ways include average roughness (R\textsubscript{a}) and ten-point height (R\textsubscript{z}). Average roughness reports the average deviation from the mean line over a sampling length, see Equation \ref{RaEQN} \cite{Thomas1981CharacterizationRoughness, Nayak1973SOMEROUGHNESS}. An example of average roughness is shown in Figure \ref{fig:RaGraph}.
 
-roughness \cite{Thomas1981CharacterizationRoughness, Nayak1973SOMEROUGHNESS}
+\begin{equation}
+    \label{RaEQN}
+    R_a=\frac{1}{L}\int^L|z|dx
+\end{equation}
 
-polishing \cite{Hardy2024ChemicalApplications}
-\textcolor{red}{discuss types of surface roughness here (Ra vs Sa vs Rz vs Sz etc)}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/Ra.png}
+    \caption{A graphical representation of R\textsubscript{a} surface roughness.}
+    \label{fig:RaGraph}
+\end{figure}
+
+The second common way to calculate surface roughness is ten-point height, a metric commonly used if extreme height changes are critical to performance. Ten-point height is the average of the difference between the five highest peaks and the five lowest valleys in a sampling length, see Equation \ref{RzEQN} \cite{Thomas1981CharacterizationRoughness}.
+
+\begin{equation}
+    \label{RzEQN}
+    R_z=(\sum_{i=1}^5P_i-\sum_{i=1}^5V_i)/5
+\end{equation}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/Rz.png}
+    \caption{A graphical representation of R\textsubscript{z} surface roughness.}
+    \label{fig:RzGraph}
+\end{figure}
+
+The roughness metrics R\textsubscript{a} and R\textsubscript{z} characterize roughness across one-dimension. One metric for two-dimensional roughness characterization measures the average spacing between local peaks called S\textsubscript{a} \cite{Gadelmawla2002RoughnessParameters}. The equation used to calculate the mean spacing between local peaks is shown in Equation \ref{SaEQN}. This measurement of surface roughness provides a better description surface irregularities.
+
+\begin{equation}
+    \label{SaEQN}
+    S_a=\sqrt{\frac{1}{N}\sum_{n=1}^N|z_n-z_{ave}|}
+\end{equation}
+
+Polished diamond surfaces can be characterized using AFM to calculate surface roughness\cite{Hardy2024ChemicalApplications}. Surface roughness results were calculated using Gwyddion, a free program for scanning probe data analysis and visualization. Average spacing between local peaks surface roughness is used to evaluate the quality of the polished diamond surface. Typically, a good polish is considered to be not more than 1 nm.
+
 
 \subsection{Surface Orientation}
 \label{XRD}
@@ -77,8 +113,8 @@ The distance between crystal planes, in \textit{d}, can be calculated from the B
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.5\linewidth]{figures/Spacefiller.jpg}
-    \caption{This should be a diagram outlining the axes of the XRD}
+    \includegraphics[width=0.8\linewidth]{figures/XRD_axes.png}
+    \caption{The figure defines relevant measurement axes for x-ray diffraction offcut measurements.}
     \label{fig:XRDConfig}
 \end{figure}
 
@@ -163,12 +199,12 @@ Raman spectra were originally taken on a Horiba LabRAM ARAMIS Raman spectrometer
 \section{Photoluminescence Spectroscopy}
 \label{PL}
 \indent
-Photoluminescent spectroscopy was used to qualitatively compare the quantity of defects, such as the nitrogen vacancy defect and silicon vacancy defect \cite{CollinsTheSpectroscopy}. Each defect has a unique luminescence based on its electronic structure, so long as it exists within the band gap of the host material. In this technique, the sample is illuminated using a chosen excitation wavelength. The excitation wavelength should be less than the band gap to prevent production of electron hole pairs. Additionally, the excitation wavelength may be strategically chosen to selectively excite defects while not providing sufficient energy to excite other. After excitation, a spectrum is taken on the luminescence of the sample. Each defect will luminesce at a wavelength equivalent to the energy difference between the excited state and the ground state; This luminescence is called the zero-phonon line. The zero-phonon line for NV\textsuperscript{-} and NV\textsuperscript{0} are 637 nm and 575 nm, respectively \cite{Fraczek2017LaserDiamond}. A schematic of the home-built experimental setup used in this work is shown in Figure \ref{fig:PLsetup}
+Photoluminescent spectroscopy was used to qualitatively compare the quantity of defects, such as the nitrogen vacancy defect and silicon vacancy defect \cite{CollinsTheSpectroscopy}. Each defect has a unique luminescence based on its electronic structure, so long as it exists within the band gap of the host material. In this technique, the sample is illuminated using a chosen excitation wavelength. The excitation wavelength should be less than the band gap to prevent production of electron hole pairs. Additionally, the excitation wavelength may be strategically chosen to selectively excite defects while not providing sufficient energy to excite other. After excitation, a spectrum is taken on the luminescence of the sample. Each defect will luminesce at a wavelength equivalent to the energy difference between the excited state and the ground state; This luminescence is called the zero-phonon line. The zero-phonon line for NV\textsuperscript{-} and NV\textsuperscript{0} are 637 nm and 575 nm, respectively \cite{Fraczek2017LaserDiamond}. A schematic of the home-built experimental setup used in this work is shown in Figure \ref{fig:PLsetup}. The setup was later modified to accomodate two different excitation wavelengths (532 nm and 695 nm) with largely the same setup. The excitation pathway was switched by strategic flip mirror placement.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.5\linewidth]{figures/Spacefiller.jpg}
-    \caption{Schematic of PL}
+    \includegraphics[width=0.8\linewidth]{figures/PL_setup.png}
+    \caption{Diagram showing the optical setup used to collect Raman and photoluminescent data.}
     \label{fig:PLsetup}
 \end{figure}
 
