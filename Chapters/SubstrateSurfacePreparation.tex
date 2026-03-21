@@ -2,25 +2,70 @@
 \label{chSurfacePrep}
 \indent
 
-This chapter will discuss the results of the experimental series that showed a correlation between substrate surface condition and defect in corporation. The use of mechanical diamond polishing, hydrogen plasma etching, and reactive ion etching to normalize the substrate surface condition prior to deposition will be discussed.
+The growth of high quality single crystal diamond via chemical vapor deposition, as discussed in Chapter \ref{chDiamondGrowth}, requires meticulous control of all variables as the diamond growth is happening under thermodynamically metastable conditions. One prominent variable is the substrate surface condition. Surface condition can be manufactured through mechanical polishing, plasma etching, reactive ion etching, or a combination of these processes. The condition of the surface is most commonly characterized through optical microscopy and atomic force microscopy, as discussed in Section \ref{sectionSurfaceCondition}. However, it is important to note that the nano-scale surface morphology can vary significantly for samples that quantitatively have the same surface roughness.
+
+This chapter will discuss the results of the experimental series that showed a correlation between substrate surface condition and defect incorporation. The use of mechanical diamond polishing, hydrogen plasma etching, and reactive ion etching to normalize the surface condition prior to deposition will be discussed.
+
+The lack of correlation in spectroscopic and morphological results with pressure and offcut experimental series discussed in Section \ref{pressureSeries} and Section \ref{offcutSeries} in combination with the weak correlation between substrate roughness with spectroscopic and morphological results presented the need for a study to understand the effects of substrate surface preparation on growth morphology and defect incorporation during deposition and, further, establish a substrate surface preparation methodology that would normalize the surface condition of any substrate prior to deposition.
+
+
+\section{Exposure of High-Quality Crystalline Facets Through Extended Hydrogen Etch}
+\indent
+
+The first surface preparation technique investigated was hydrogen plasma etching due to the ease of adding this preparation step prior to CVD synthetic diamond growth. A single 3 mm x 3 mm x 0.5 mm (100) HPHT substrate from NDT, called NDT22\_08b, was fully characterized using the methods discussed in Chapter \ref{chMethods}. The starting surface roughness of NDT22\_08b was 0.948 nm, which met the less than 1 nm surface roughness criterion. The starting surface did not exhibit any micro or macroscopic features when viewed with DICM. 
+
+After complete characterization, NDT22\_08b was etched in a hydrogen plasma at 320 mbar and 700$^\circ$C for 15 minutes. NDT22\_08b was removed from the reactor and renamed to NDT22\_08b1 to indicate a surface processing step had been performed on the starting substrate NDT22\_08b. NDT22\_08b1 was characterized using atomic force microscopy for surface roughness and DICM optical microscopy for microscopy features. After characterization, NDT22\_08b1 was etched under the same conditions for an additional 15 minutes. The incremental name revision, characterization, and subsequent etching was repeated. The etch steps were initially increments of 15 minutes until 1 hour (60 minutes) of cumulative etching was achieved, then two longer increments one 2 hour and 20 minute etch and finally a 1 hour and 40 minute etch to achieve a cumulative 5 hours of total hydrogen plasma etching. Atomic force microscopy and DICM results are shown in Figure \ref{fig:H2EtchAFM} and Figure \ref{fig:H2EtchDICM}, respectively.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.5\linewidth]{figures/SameRoughnessComparison.png}
-    \caption{Two different surfaces morphologies with equivalent surface roughness metrics.}
-    \label{fig:RoughnessComparison}
+    \includesvg[width=1\linewidth]{figures/Summary_DICM_ColorMatching.svg}
+    \caption{Caption}
+    \label{fig:H2EtchDICM}
 \end{figure}
 
-\section{Exposure of High-Quality Crystalline Facets Through Extended Hydrogen Etch}
+\begin{figure}
+    \centering
+    \includesvg[width=1\linewidth]{figures/SummaryAFM_SameScale_withColorScaleBar.svg}
+    \caption{Caption}
+    \label{fig:H2EtchAFM}
+\end{figure}
 
+
+The hydrogen plasma etching preferentially attacked polishing features as observed from the appearance of diagonally oriented linear features in the DICM images of the 15 minute hydrogen etch. As hydrogen etch progressed, the existing linear features became more pronounced and new linear features formed. The linear nature and diagonal orientation coincide with the shape and direction of polishing lines. Polishing lines at a nanoscale exhibit the same shape and direction as the microscopic features observed after hydrogen plasma etching. 
+
+The hydrogen plasma etching at a nanoscale progressed through formation of etch pits. The etch pits showed a similar shape to pyramidal hillocks defects sometimes observed during CVD diamond growth, but the pits were inverted, depressions into the surface not protrusions from the surface like pyramidal hillocks. The etch pits grew in frequency and areal size as hydrogen etching progressed. The inverted pyramidal hillock shape of the etch pits indicate the exposure of pristine crystalline facets. The surface roughness decreased to 0.514 nm after the first 15 minutes of hydrogen plasma etching. Then, the surface roughness increased as cumulative etching increased due to the increased number and size of etch pits.
+
+The experimental series was repeated on a second 3 mm x 3 mm x 0.5 mm (100) HPHT substrate from NDT, called NDT22\_07. In this series, the cumulative 5 hours of hydrogen plasma etching was achieved in four steps as opposed to seven. This was done to evaluate potential effects due to frequency of process ramp up. The increase in surface roughness as hydrogen plasma etching time increase observed in the first series was also observed in the second series. The nanoscale hydrogen etching progressed in a similar fashion to the first series in that etch pits grew in number and size as the etch progressed. In the second series, the etch pits exhibited a stronger tendency to grow into on another and create large, linear step edge-like features. At a microscale, the linear features appeared and enhanced as etch time increased. These features were coincided with the nano-scale polishing lines on the starting substrate. In addition to the linear polishing features being etched, microscale etch pits were exposed that did not correspond to polishing lines due to the isolated region concentrations of the etch pits. The regions of concentrated etch pit formations are presumed to correspond with dislocations in the substrate. The difference in AFM and DICM results after 5 hours of hydrogen plasma etching suggest difference in substrate. The frequency of process ramp up did not affect the surface condition of the substrate.
 
 \section{Formation of Etch Pits after RIE Etching}
+\indent
+
+Although a 5 hour hydrogen plasma etch prior to deposition produced high quality single crystal diamond growth, very little material was removed. The hydrogen plasma etching results suggested the presence of polishing damage through preferential etching of those regions. Subsurface polishing damage due to mechanical polishing has been shown to penetrate several microns deep into the surface of (100) single crystal diamond \cite{Zheng2020SubsurfacePolishing}. Rather than remove polish damage on a small scale, through hydrogen plasma etching, a ballistic reactive ion etch, was performed to remove several microns of polishing damage.
+
+This experiment was performed on the same starting substrate as the first hydrogen plasma etching series. The grown layer of NDT22\_08c was removed and renamed DS422\_08c. After removing the grown layer through laser cutting, the original diamond substrate was mechanically polished and renamed NDT22\_08c1 to preserve the supplier and history of growth while also indicating the additional surface preparation. During the laser cutting and mechanical polishing, one corner of NDT22\_08c1 was internally cracked, as shown in Figure \ref{fig:RIEDICM}. No evidence of the crack was observed on the surface of the substrate when examined via atomic force microscopy. NDT22\_08c1 was reactive-ion etched in an inductively coupled plasma (ICP-RIE) for 75 minutes. The gas phase of the plasma consisted of oxygen (O\textsubscript{2)}), argon (Ar), and sulfur hexaflouride (SF\textsubscript{6}) at flow rates of 35 sccm, 20 sccm, and 3 sccm, respectively, with the chamber pressure set to 10 mTorr. ICP power, also known as coil power, was set to 500W. RIE power, also known as platen power, was set to 150W. An etch rate of approximately 134 nm/min was estimated based on trials from a separate NDT seed with a (111) surface orientation. Based on the approximate etch rate, NDT22\_08c1 was etched for 75 minutes.
+
+\begin{figure}
+    \centering
+    \includesvg[width=1\linewidth]{figures/DICM_RIE_SurfacePrep.svg}
+    \caption{Microscope image of NDT22\_08c1 after grown film removal and mechanical polishing shown on the left. Microscope image of NDT22\_08c2 after RIE shown on the right. }
+    \label{fig:RIEDICM}
+\end{figure}
+
+The reactive ion etching removed 6.5 $\mu m$ from the center of NDT22\_08c1. The cracked corner of NDT22\_08c1 etched at a higher rate, removing 9.0 $\mu m$ diamond. This was likely due to edge effects related to the internal crack. RIE, while removing substantially more material, also preferentially etched polishing damage. Diagonal linear features are observed around the edges of NDT22\_08c2 as shown in Figure \ref{fig:RIEDICM}. Despite the enhanced polishing damage features, the overall surface roughness of the RIE surface was 0.683 nm, much less than the surface roughness criterion for mechanical polishing. 
 
 \section{Effects of Surface Preparation on Deposition Quality}
-The lack of correlation in spectroscopic and morphological results with pressure and offcut variation and the weak correlation between substrate roughness with spectroscopic and morphological results presented the need for a study to understand the effects of substrate surface preparation on growth morphology and defect incorporation during deposition. A study to analyze these effects is in progress. One 3 mm x 3 mm x 0.5 mm (100) HPHT substrate from NDT has been fully characterized in the as-received condition from the supplier which included characterization of offcut, FTIR, UVVis, Raman, and AFM. The sample was then acid and solvent cleaned in the same way as the samples from the pressure optimization study. A deposition on the sample in the as-received condition was completed at 950 $^{\circ}$C, 250 mbar, and flow rates of 368 sccm of H$_2$, 16 sccm of CH$_4$, and 16.5 sccm of 0.01 mol\% N$_2$ in H$_2$, because these conditions gave the best result in the previous study. A 10-minute hydrogen etch was performed immediately prior to the deposition.
-	
-The sample was fully characterized after deposition to understand the results for an as-received substrate. The as-received substrate produced a rough, dark deposition layer that appeared to be graphitic carbon or unepitaxial crystallites. 
-	
-Next, the deposited layer will be mechanically polished back to the initial substrate surface. The substrate will then receive a fine mechanical polish to prepare the surface better than the as-received condition. The pre-characterization, deposition, post-characterization, and substrate surface preparation will be repeated several times only changing the substrate surface preparation technique. In addition to the fine mechanical polish, a chemo-mechanical polish, a significant hydrogen etch, and a reactive ion etch (RIE) will be compared for the preparation of the surface and analyze the effects of sample preparation on growth morphology and defect incorporation.
+\indent
+
+Following each etching experiment, an intrinsic diamond deposition was completed. The deposition conditions were three percent methane in hydrogen with a total flow rate of 400 sccm. The pressure was maintained at 320 mbar by varying the position of the gate valve with the substrate temperature maintained at 900 $^\circ$C by varying microwave power. The resultant grown film of the first hydrogen etch series was renamed NDT22\_08c to indicate a deposition layer was grown on NDT22\_08b6 and was fully characterized. NDT22\_08c exhibited order orange peel growth morphology. A clear presence of island nucleation was observed; however, the island nucleation was not randomly distributed across the substrate surface. The islands exhibited an overarching linear pattern suggesting nucleation was happening along the step edge in multiple locations at the same time as opposed to pure step flow growth where nucleation would occur at the step edge kink and subsequent methyl group adsorptions would occur adjacent to the previous growth. The combined growth morphology suggests high quality growth due to the ordered step structure. 
+
+A deposition was performed on NDT22\_07-4, which was renamed to NDT22\_07a after deposition, under the same condition as NDT22\_08c. Step flow growth morphology was observed on the grown film indicating high quality growth. The high quality growth in both NDT22\_07a and NDT22\_08c after 5 hours of hydrogen plasma etching suggest hydrogen plasma etching removes detrimental polishing damage and dislocation defects at the substrate surface to expose pristine crystalline face favorable for growing high quality single crystal diamond.
 
 
+\begin{figure}
+    \centering
+    \includesvg[width=1\linewidth]{figures/DICM_DepositionPostSurfacePrep.svg}
+    \caption{Microscope images of grown films substrates that experienced different surface preparation. NDT22\_08c (left) exhibited ordered orange peel growth morphology after a cumulative 5 hour hydrogen plasma etch over 6 increments. NDT22\_07a (middle) exhibited step flow growth morphology after a cumulative 5 hour hydrogen plasma etch over 4 increments. NDT22\_08d (right) exhibited step flow growth morphology after a 75 minute RIE.}
+    \label{fig:SurfacePrepGrownFilms}
+\end{figure}
+
+After characterizing the RIE surface of NDT22\_08c2, a deposition under the same conditions described above was performed. The RIE prepared substrate surface with the grown film was renamed NDT22\_08d. The morphology of the CVD grown layer was step flow growth indicating high quality single crystal diamond growth. The ballistic removal of polishing damage through RIE exposed a high-quality, damage-free crystalline surface for deposition. The resulting roughness after RIE (S\textsubscript{a} = 0.683 nm) was significantly less than the resulting surface roughness of the samples prepared with the 5 hour hydrogen plasma etch (S\textsubscript{a, NDT22\_08b6} = 10.979 nm and S\textsubscript{a, NDT22\_07-4} = 11.116 nm), however, the increased roughness did not impact the quality of the growth as the features that contributed to the roughness in they hydrogen etching samples were exposed crystalline facets rather than amorphous polishing damage.

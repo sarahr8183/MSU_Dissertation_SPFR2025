@@ -27,6 +27,7 @@ Homoepitaxial diamond growth does not only occur in the vertical direction. Late
 \end{equation}
 
 \section{Surface Condition}
+\label{sectionSurfaceCondition}
 There are several surface condition variables that influence synthetic diamond growth. Surface condition can also be used to asses the quality of a deposition. Three methods for evaluating the surface condition will be described in the following section. First, optical is used to identify micron-scale features, such as large polishing features or unepitaxial crystallites, identify growth morphology on grown films, or determine the presence and relative intensity of strain within a substrate. Second, atomic force microscopy is used to identify nanometer-scale feature and quantify surface roughness. Third, x-ray diffraction is used to determine the surface orientation and offcut.
 
 \subsection{Optical Microscopy}
@@ -82,14 +83,23 @@ The second common way to calculate surface roughness is ten-point height, a metr
     \label{fig:RzGraph}
 \end{figure}
 
-The roughness metrics R\textsubscript{a} and R\textsubscript{z} characterize roughness across one-dimension. One metric for two-dimensional roughness characterization measures the average spacing between local peaks called S\textsubscript{a} \cite{Gadelmawla2002RoughnessParameters}. The equation used to calculate the mean spacing between local peaks is shown in Equation \ref{SaEQN}. This measurement of surface roughness provides a better description surface irregularities.
+The roughness metrics R\textsubscript{a} and R\textsubscript{z} characterize roughness across one-dimension. One metric for two-dimensional roughness characterization measures the average spacing between local peaks called S\textsubscript{a} \cite{Gadelmawla2002RoughnessParameters}. The equation used to calculate the mean spacing between local peaks is shown in Equation \ref{SaEQN}. This measurement of surface roughness provides a better description surface irregularities. For the remainder of this work, mean spacing between local peaks (S\textsubscript{a}) will be referred to as surface roughness.
 
 \begin{equation}
     \label{SaEQN}
     S_a=\sqrt{\frac{1}{N}\sum_{n=1}^N|z_n-z_{ave}|}
 \end{equation}
 
-Polished diamond surfaces can be characterized using AFM to calculate surface roughness\cite{Hardy2024ChemicalApplications}. Surface roughness results were calculated using Gwyddion, a free program for scanning probe data analysis and visualization. Average spacing between local peaks surface roughness is used to evaluate the quality of the polished diamond surface. Typically, a good polish is considered to be not more than 1 nm.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/SameRoughnessComparison.png}
+    \caption{Two different surfaces morphologies with equivalent surface roughness metrics.}
+    \label{fig:RoughnessComparison}
+\end{figure}
+
+It is important to note that surface roughness values only do not provide a comprehensive description of the surface. For example, the two surface show in Figure \ref{fig:RoughnessComparison} have the same measured roughness but exhibit significantly different features. This observation and the results of the experimental series discussed in Chapter \ref{chPressureOffcut} led to the investigation of surface condition normalization discussed in Chapter \ref{chSurfacePrep}.
+
+Polished diamond surfaces can be characterized using AFM to calculate surface roughness \cite{Hardy2024ChemicalApplications}. Surface roughness results were calculated using Gwyddion, a free program for scanning probe data analysis and visualization. Average spacing between local peaks surface roughness is used to evaluate the quality of the polished diamond surface. Typically, a good polish is considered to be not more than 1 nm.
 
 
 \subsection{Surface Orientation}
@@ -199,7 +209,7 @@ Raman spectra were originally taken on a Horiba LabRAM ARAMIS Raman spectrometer
 \section{Photoluminescence Spectroscopy}
 \label{PL}
 \indent
-Photoluminescent spectroscopy was used to qualitatively compare the quantity of defects, such as the nitrogen vacancy defect and silicon vacancy defect \cite{CollinsTheSpectroscopy}. Each defect has a unique luminescence based on its electronic structure, so long as it exists within the band gap of the host material. In this technique, the sample is illuminated using a chosen excitation wavelength. The excitation wavelength should be less than the band gap to prevent production of electron hole pairs. Additionally, the excitation wavelength may be strategically chosen to selectively excite defects while not providing sufficient energy to excite other. After excitation, a spectrum is taken on the luminescence of the sample. Each defect will luminesce at a wavelength equivalent to the energy difference between the excited state and the ground state; This luminescence is called the zero-phonon line. The zero-phonon line for NV\textsuperscript{-} and NV\textsuperscript{0} are 637 nm and 575 nm, respectively \cite{Fraczek2017LaserDiamond}. A schematic of the home-built experimental setup used in this work is shown in Figure \ref{fig:PLsetup}. The setup was later modified to accomodate two different excitation wavelengths (532 nm and 695 nm) with largely the same setup. The excitation pathway was switched by strategic flip mirror placement.
+Photoluminescent spectroscopy was used to qualitatively compare the quantity of defects, such as the nitrogen vacancy defect and silicon vacancy defect \cite{CollinsTheSpectroscopy}. Each defect has a unique luminescence based on its electronic structure, so long as it exists within the band gap of the host material. In this technique, the sample is illuminated using a chosen excitation wavelength. The excitation wavelength should be less than the band gap to prevent production of electron hole pairs. Additionally, the excitation wavelength may be strategically chosen to selectively excite defects while not providing sufficient energy to excite other. After excitation, a spectrum is taken on the luminescence of the sample. Each defect will luminesce at a wavelength equivalent to the energy difference between the excited state and the ground state; This luminescence is called the zero-phonon line. The zero-phonon line for NV\textsuperscript{-} and NV\textsuperscript{0} are 637 nm and 575 nm, respectively \cite{Fraczek2017LaserDiamond}. A schematic of the home-built experimental setup used in this work is shown in Figure \ref{fig:PLsetup}. The setup was later modified to accommodate two different excitation wavelengths (532 nm and 695 nm) with largely the same setup. The excitation pathway was switched by strategic flip mirror placement.
 
 \begin{figure}
     \centering
