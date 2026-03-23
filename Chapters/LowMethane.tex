@@ -2,7 +2,7 @@
 \label{chLowCH4}
 \indent
 
-This chapter presents the results of a deposition series grown at low methane concentrations in a high power, high growth rate chemical vapor deposition (CVD) diamond reactor. These experiments were designed to assess the quality of growth under not optimized, low growth rate, operation region of the high power, high growth rate of Diamond System 4 (DS4). As previously established, CVD diamond growth occurs in a thermodynamically metastable regime, where even subtle variations in substrate surface condition can influence growth quality. While Chapter \ref{chSurfacePrep} determined etching methods to normalize surface conditions for high quality depositions, this chapter will ensure high quality single crystal diamond growth occurs in the non-ideal operation region of DS4.
+This chapter presents the results of a deposition series grown at low methane concentrations in a high power, high growth rate chemical vapor deposition (CVD) diamond reactor. These experiments were designed to assess the quality of growth under not optimized, low growth rate, operation region of the high power, high growth rate of Diamond System 4 (DS4). High quality growth in the not ideal growth regime of DS4 is valuable because manufacturing of layered structures may require the reduction in growth rate, nearly to a halt, while feed gas exchange occurs. As previously established, CVD diamond growth occurs in a thermodynamically metastable regime, where even subtle variations in substrate surface condition can influence growth quality. While Chapter \ref{chSurfacePrep} determined etching methods to normalize surface conditions for high quality depositions, this chapter will ensure high quality single crystal diamond growth occurs in the non-ideal operation region of DS4.
 
 In contrast to the reactor's previous optimization for high growth rates, the present study explores a low methane concentration regime that results in reduced growth rates and deviates from standard operating conditions. Establishing reliable growth in this regime is critical for enabling precise control over nitrogen dopants in layered structures. In particular, slowing the growth rate provides a pathway to minimize line widths of doped layers through near halted growth rates during introduction and cessation of nitrogen gas flow into the reactor. Thus, this work is motivated not only by understanding growth behavior under not optimized condition but also by the need to maintain crystalline quality during layer device fabrication.
 
@@ -11,11 +11,130 @@ A key outcome of this study is the presence of nitrogen incorporation despite th
 \section{Low Methane Growth in DS4}
 \indent
 
-Prior to the beginning of this dissertation work, Yajun Gu, a doctoral graduate student researcher in the MSU-Fraunnhofer lab, had optimized high quality single  crystal diamond growth on DS4, a MPACVD reactor that was described in Section \ref{DS4}. The optimization of DS4 included the effects of methane concentration and reactor pressure on growth rate and compared these results to other bell jar style reactors \cite{Gu2012}. The study of methane concentration on growth rate evaluated 3 percent, 5 percent, 7 percent, and 9 percent methane. At 3 percent methane, the growth rate measured approximately 18 $\mu m$ per hour. 
+Prior to the beginning of this dissertation work, Yajun Gu, a doctoral graduate student researcher at Michigan State University, had optimized high quality single crystal diamond growth on DS4, a MPACVD reactor that was described in Section \ref{DS4} \cite{Gu2011THESYNTHESIS}. The optimization of DS4 included the effects of methane concentration and reactor pressure on growth rate and compared these results to other bell jar style reactors \cite{Gu2012}. The study of methane concentration on growth rate evaluated 3 percent, 5 percent, 7 percent, and 9 percent methane. At 3 percent methane, the growth rate measured approximately 18 $\mu$m per hour. The residence time of DS4, or the time it takes a feed gas to leave the chamber once it enters the chamber, is approximately 3 minutes \cite{Gu2011THESYNTHESIS}. At a growth rate of 18$\mu m$ per hour, approximately one micron of diamond growth occurs before the nitrogen in the feed gas is out of the reactor chamber once the nitrogen flow is shut off. The growth rate and residence time dictate the linewidth for layered structures. Thus, low methane concentrations were explored to ensure high quality growth while reducing growth rate and linewidth.
+
+\begin{table}
+    \centering
+    \begin{tabular}{c|cccc}
+        Sample ID & H\textsubscript{2} Flow Rate & CH\textsubscript{4} Flow Rate & CH\textsubscript{4} Percent & Total Flow Rate \\
+        & (SCCM) & (SCCM)  &  & (SCCM)\\
+        \hline
+         MTI21\_07b & 396 & 4 & 1\% & 400\\
+         MTI21\_01a & 392 & 8 & 2\% & 400\\
+         MTI21\_16a & 388 & 12 & 3\% & 400\\
+    \end{tabular}
+    \caption{Deposition conditions for low methane depositions in DS4.}
+    \label{tab:LowCH4DepoSummary}
+\end{table}
+
+To investigate the low methane regime of DS4, three 3 mm x 3 mm x 0.3 mm (100) CVD substrate from MTI were grown at varying methane concentrations. The first sample was grown at 3\% methane condition was duplicated to establish consistency with the previous work. The second and third samples were grown at 2\% and 1\% methane. The total flow rate for each deposition was 400 sccm with the ratio of methane to hydrogen varied to set the methane concentration. Reactor pressure was set to 320 mbar (240 Torr) and substrate temperature was maintained at 900$^\circ$C. Each deposition was 24 hours in length resulting in grown films hundreds of microns thick.
+
+\begin{figure}
+    \centering
+    \includesvg[width=1\linewidth]{figures/DICM_DepositionLowMethane.svg}
+    \caption{DICM images showing growth morphology of deposition films at low methane concentrations.}
+    \label{fig:DICMLowCH4}
+\end{figure}
+
+All three low methane depositions exhibited high quality growth when evaluating the growth morphology as step flow growth was observed on all 3 samples, as shown in Figure \ref{fig:DICMLowCH4}. Growth rate, presence of growth defects, and unintentional nitrogen incorporation results will be discussed in the follow sections. 
 
 \section{Methane Concentration Effects on Growth Rate}
+\indent
+
+The vertical growth rate of each deposition was measured using a linear encoder, as described in section \ref{thickness}. The growth rate decreased with no decrease in growth quality as methane concentration decreased. The grow rate decrease was proportional to methane concentration decrease. Growth rate is expected to decrease as less carbon precursor is present in the reactor to deposit onto the diamond substrate. At the minimum growth rate, 6.1 $\mu m$/hr, achieved at 1 percent methane concentration, the minimum linewidth attainable is 0.3 $\mu m$. Growth rate and minimum linewidth achievable for 3 minute residence time for each low methane deposition can be found in Table \ref{tab:LowCH4DepoSummary}
+
+\begin{table}
+    \centering
+    \begin{tabular}{c|ccc}
+        Sample ID & CH\textsubscript{4} Percent & Growth Rate & Minimum Linewidth \\
+        & & ($\mu m$/hr)& ($\mu m$)\\
+        \hline
+        MTI21\_07b & 1\% & 6.1 & 0.3\\
+        MTI21\_01a & 2\% & 11.7 & 0.6\\
+        MTI21\_16a & 3\% & 17.6 & 0.9\\
+    \end{tabular}
+    \caption{Growth rate for low methane depositions and minimum linewidth for 3 minute residence time.}
+    \label{tab:LowCH4DepoSummary}
+\end{table}
+
+The goal of layered structures is to improve the z-axis control of the laser writing process. The z-axis control of the laser writing process as reported by Chen \textit{et. al.} was 200 nm, or 0.2$\mu m$ \cite{Chen2019}. Therefore, line width control through reduced methane concentrations in DS4 is not sufficient to improve the z-control of quantum sensing devices.
+
 \section{Formation of Unepitaxial Crystallites}
+\indent
+
+Although all three low methane depositions exhibited step flow growth, an indicator of high quality growth, at one percent methane concentration numerous unepitaxial crystallites were present in the grown film, as shown in Figure \ref{fig:UEC1percentCH4}. Unepitaxial crystallites formation, as discussed in Section \ref{DICM}, occurs when growth progresses at nucleation sites where adatoms had insufficient kinetic energy to find lower energy adsorption configurations. The presence of unepitaxial crystallites produces strain in the surrounding crystal. 
+
+\begin{figure}
+    \centering
+    \includesvg[width=1\linewidth]{figures/DICM_UnepitaxialCrystallite1percentCH4.svg}
+    \caption{Higher magnification DICM image of unepitaxial crystallite in 1\% CH\textsubscript{4} deposition.}
+    \label{fig:UEC1percentCH4}
+\end{figure}
+
+Strain in single crystal diamond can be observed through birefringence, as discussed in Section \ref{Birefringence}. Birefringence results for the low methane deposition series are shown in Figure \ref{fig:BirefringenceLowCH4}. In the 1\% methane deposition, bright regions surround the unepitaxial crystallites, showing the strain caused by unepitaxial crystallites. Strain is also observed emanating from the corner and edges of the samples, however, all three depositions possess regions of very low strain, dark regions. These regions offer ample space for quantum sensing device manufacturing. 
+
+\begin{figure}
+    \centering
+    \includesvg[width=1\linewidth]{figures/Birefringence_DepositionLowMethane.svg}
+    \caption{Birefringence images (exposure time = 90 ms) showing strain present in deposition films at low methane concentrations.}
+    \label{fig:BirefringenceLowCH4}
+\end{figure}
+
 \section{Unitentional Nitrogen Incorporation}
+\indent
+
+All three depositions were intrinsic growths meaning no intentional doping. Despite the feed gas being strictly comprised of hydrogen and methane, the inherent leak rate of DS4 allows for atmospheric nitrogen to enter the process chamber. Therefore, each low methane sample was spectroscopically characterized to determine purity. Nitrogen concentrations were below the detection limit of Fourier Transform Infrared (FTIR) and ultra-violet and visible (UVVis) spectroscopy methods described in Section \ref{FTIR} and Section \ref{UVVis}. Nitrogen vacancy (NV) center concentration was qualitatively determined using photoluminescent spectroscopy (PL) as described in Section \ref{PL}.
+
+\begin{figure}
+    \centering
+    \includesvg[width=1.3\linewidth]{figures/PL_LowMethane.svg}    
+    \caption{Photoluminescent spectra of low methane deposition series. Each spectrum is normalized to the Raman line to allow for qualitative comparison of defect concentration.}
+    \label{fig:PLLowCH4}
+\end{figure}
+
+Normalized PL results, displayed in Figure \ref{fig:PLLowCH4} show NV concentration increases as as methane concentration decreases. The introduction of atmospheric nitrogen via the leak rate of DS4 is a constant rate for all three low methane depositions as the reactor pressure was held constant across all three growths. Because the unitentional nitrogen flow rate is constant and the methane flow rate is intentionally decreased, the gas phase ratio of nitrogen species to carbon species increases as methane concentration decreases. The higher concentration of nitrogen species in the gas phase competes for radical adsorption sites that carbon radicals would otherwise bond to to grow single crystal diamond \cite{Dunst2009GrowthEffect}.
+
+The background NV concentration were too high for laser writing, as determined by Quantum Optical Devices (QuOD) lab's laser writing experts Andrew Kirkpatrick and Kai Klink, in all three low methane depositions.
+
 \section{Post-Processing to Reduce Nitrogen Vacancy Center}
+\indent
+
+One 3 mm x 3 mm x 0.3 mm (100) CVD substrate from MTI, MTI21\_06 was grown at the 3\% methane condition in order to study post-processing steps to reduce NV background. The grown film was removed from the substrate by laser cutting and was named DS421\_06a The first process investigated was a high pressure anneal to anneal out vacancies leaving just substitutional nitrogen or nitrogen platelet defects behind. The second process investigated was a high temperature hydrogen environment to passivate the NV center. More detail on these two post-processing methods are discussed in the following sections, Section \ref{HiPressureAnneal} and Section \ref{HiTempH2Passivation}.
+
 \subsection{High Pressure Annealing}
+\label{HiPressureAnneal}
+\indent
+
+The first process to reduce NV background in DS421\_06a was high pressure annealing. Annealing is heat treatment process provides energy to a system to allow various species, depending on binding energy of species and temperature of annealing process, the energy to move to a lower energy configuration. Diamond annealing processes must happen under high pressure as well as high temperature. This is because diamond is the thermodynamically favorable allotrope at high pressure and high temperature. At high temperature and standard pressure, the thermodynamically favorable allotrope of carbon is graphite. Therefore, a high temperature only diamond anneal will result in the transformation of diamond into graphite.
+
+The high pressure annealing of DS421\_06a was performed at Argonne National Labs. The high pressure anneal increased the NV background because vacancies tend to settle next to substitutional nitrogen after annealing \cite{Savage2021}. Because the background NV concentration increased, a different post processing method must be employed to reduce NV background.
+
+
 \subsection{High Temperature Hydrogen Environment to Passivate Nitrogen Vacancy Center}
+\label{HiTempH2Passivation}
+\indent
+
+Because high pressure annealing increased the NV background, DS421\_06a was exposed to a high temperature hydrogen environment. The intent was for hydrogen to diffuse into the diamond lattice and combine with NV centers creating optically inactive nitrogen vacancy hydrogen defect (NVH). DS421\_06a was placed in a tube furnace at atmospheric pressure with 5\% H\textsubscript{2} in argon at a flow rate of 1 L/min. The temperature of the tube furnace was increased at a rate of 3$^\circ$C/min to achieve 250$^\circ$C and held for 30 minutes. The temperature was then increased at a rate of 2$^\circ$C/min to achieve 400$^\circ$C then held for 30 minutes. Next, the temperature was increased at a rate of 3$^\circ$C/min to achieve 1050$^\circ$C and held for 2 hours. The tube furnace was, then, cooled at a rate of 5$^\circ$C/min. A graphical representation of the tube furnace temperature throughout the hydrogen passivation process is shown in Figure \ref{fig:TubeFurnaceTemp}. 
+
+\begin{figure}
+    \centering
+    \includesvg[width=1.2\linewidth]{figures/temperature_profile.svg}
+    \caption{A temperature profile of the tube furnace during high temperature hydrogen environment passivation.}
+    \label{fig:TubeFurnaceTemp}
+\end{figure}
+
+After the high temperature hydrogen passivation, DS421\_06a was renamed to MSU21\_06a to indicate processing at MSU that affects the bulk properties of the starting sample. MSU21\_06a was characterized via UVVis and FTIR for defect incorporation. A complicated vibrational band in the 500 cm\textsuperscript{-1} to 1550cm\textsuperscript{-1} emerged in the FTIR spectrum, as shown in Figure \ref{fig:FTIRafterHiTempH2}. This band corresponds to hydrogen atoms in the diamond lattice and is observed in hydrogen-rich diamonds of light gray color \cite{Fritsch1989OpticalContent}. This suggests process conditions were sufficient such that hydrogen could diffuse into the diamond lattice. \textcolor{red}{Will also discuss the UVVis plot but need to export data file as .txt from UVVis computer because I cannot plot the data in the format I currently have. Probably should also take PL data on this sample to see if suppressed NV background by creating NVH from NV.}
+
+\begin{figure}
+    \centering
+    \includesvg[width=1\linewidth]{figures/20250110-MSU_21_06-FTIR.svg}
+    \caption{FTIR spectrum of MSU21\_06a after exposure to high temperature hydrogen environment for passivation.}
+    \label{fig:FTIRafterHiTempH2}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includesvg[width=1\linewidth]{figures/20250110-MSU_21_06-FTIR.svg}
+    \caption{UVVis spectrum of MSU21\_06a after exposure to high temperature hydrogen environment for passivation.}
+    \label{fig:UVVisafterHiTempH2}
+\end{figure}

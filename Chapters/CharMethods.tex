@@ -1,16 +1,54 @@
 \chapter{Methods of Sample Characterization}
 \label{chMethods}
 \indent
+
 This chapter will describe methods of characterization for diamond samples. Because diamond is not thermodynamically favorable at room temperature and pressure, synthetic diamond growth is not straight forward. Thorough characterization of dependent variables is essential in identifying cause-and-effect relationships in the complex system of independent variables that is CVD synthetic diamond growth. First, a discussion of two different methods for measuring the growth rate. Next, methods for characterizing the surface, such as surface roughness via atomic force microscopy (AFM), surface orientation via x-ray diffraction (XRD), and optical microscopy, of the diamond substrate and grown film will be discussed. Lastly, methods for characterizing defect concentrations using Fourier Transform Infrared (FTIR) spectroscopy, Ultra-violet and Visible (UV-Vis) spectroscopy, Raman spectroscopy, and photoluminescent spectroscopy.
+
+\section{Naming Convention for Diamond Samples}
+\label{SampleTracking}
+\indent
+
+The first step in characterizing diamond samples is naming the sample. As samples go through several changes, sample names need to be informative and modifiable such that origination and process history is preserved. A three part naming convention was developed. The naming convention starts with a source code which indicates the supplier or growth reactor, see Figure \ref{fig:nameSource}. The second part of the naming convention is the acquisition code which indicates the year the sample was acquired and the sequential order the sample was received within that year, see Figure \ref{fig:nameAcq}. The last part of the naming convention is the modification code which add or increments an alphabetical character for processing that modifies the bulk material properties. The modification code for surface treatments is a numeric character that should be added or incremented for subsequent surface treatments, see Figure \ref{fig:nameMod}. A graphical example of the implementation of this naming convention is show in Figure \ref{fig:nameEx}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{figures/SFRSampleNamingConventionSourceCode.png}
+    \caption{Source code description for sample naming convention.}
+    \label{fig:nameSource}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{figures/SFRSampleNamingConventionAcqusition.png}
+    \caption{Acquisition code description for sample naming convention.}
+    \label{fig:nameAcq}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{figures/SFRSampleNamingConventionModification.png}
+    \caption{Modification code description for sample naming convention.}
+    \label{fig:nameMod}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{figures/SFRSampleNamingConventionExample.png}
+    \caption{Graphical example of naming convention implementation.}
+    \label{fig:nameEx}
+\end{figure}
 
 \section{Growth Rate}
 \label{growthrate}
 \indent
+
 Growth rate is a valuable dependent variable in synthetic diamond growth. CVD diamond growth occurs primarily in one direction, normal to the diamond seed surface, whereas HPHT diamond growth occurs in all crystalline directions simultaneously. To determine one directional, vertical, growth rate, a linear encoder is used to calculate the thickness before and after growth. To determine total growth rate, the mass of the sample, before and after growth is measured.
 
 \subsection{Vertical Growth Rate via Linear Encoder}
 \label{thickness}
- Vertical growth rate was determined by thickness measurements before and after deposition. Thickness measurements were taken at the center at each corner of the sample using a Mitutoyo EH-10P linear encoder. The difference between the thickness after deposition ($z_{final}$) and before deposition ($z_{inital}$) was then divided by the length of deposition ($t_{deposition}$) determined the vertical growth rate, as shown in equation \ref{vertGR}.
+\indent
+
+Vertical growth rate was determined by thickness measurements before and after deposition. Thickness measurements were taken at the center at each corner of the sample using a Mitutoyo EH-10P linear encoder. The difference between the thickness after deposition ($z_{final}$) and before deposition ($z_{inital}$) was then divided by the length of deposition ($t_{deposition}$) determined the vertical growth rate, as shown in equation \ref{vertGR}.
 
 \begin{equation}
 \label{vertGR}
@@ -19,6 +57,8 @@ Growth rate is a valuable dependent variable in synthetic diamond growth. CVD di
 
 \subsection{Total Growth Rate via Mass Balance}
 \label{mass}
+\indent
+
 Homoepitaxial diamond growth does not only occur in the vertical direction. Lateral outgrowth is also possible. To account for this, the mass of the substrate before deposition and the mass of the substrate and growth layer, combined, after deposition was collected and used to calculate a total volumetric growth rate of the sample. The sample mass was taken using a Mettler Toledo XS105 mass balance. 
 
 \begin{equation}
@@ -28,12 +68,15 @@ Homoepitaxial diamond growth does not only occur in the vertical direction. Late
 
 \section{Surface Condition}
 \label{sectionSurfaceCondition}
+\indent
+
 There are several surface condition variables that influence synthetic diamond growth. Surface condition can also be used to asses the quality of a deposition. Three methods for evaluating the surface condition will be described in the following section. First, optical is used to identify micron-scale features, such as large polishing features or unepitaxial crystallites, identify growth morphology on grown films, or determine the presence and relative intensity of strain within a substrate. Second, atomic force microscopy is used to identify nanometer-scale feature and quantify surface roughness. Third, x-ray diffraction is used to determine the surface orientation and offcut.
 
 \subsection{Optical Microscopy}
 \subsubsection{Differential Interference Contrast Microscopy (DICM)}
 \label{DICM}
 \indent
+
 Differential interference contrast microscopy (DICM) is an optical microscopy technique that utilizes properties of polarized light to improve the resolution of features in optical microscopy. This work utilized a Nikon ECLIPSE ME600 microscope. Surface features such as polishing lines, etch pits, and step flow growth can be observed using this technique.
 
 Growth morphology is a valuable characterization technique for crystal growth. Nucleation and propagation styles can be inferred from growth morphology. Variations in nucleation and propagation styles can affect the strain within the grown film. For example, nucleation that occurs at step edges and progresses linearly along the step edge until a complete new step is formed produces a growth morphology called step flow growth and indicates low strain in the grown film due to the orderly nucleation and propagation \cite{Frenklach1996SurfaceGrowth, Sunagawa1999GrowthCrystals, Burton1951THECRYSTALS, YagiStepSurfaces}. An alternative growth morphology results from nucleation that occurs on flat planes, not at step edges. The nucleation sites initiate growth that results in a number of "islands" growing in size until they encounter a neighboring island. The resulting morphology resembles that of an orange peel with numerous bumps growing into one another. This growth morphology is called orange peel, due to its appearance, and is associated with lower quality, higher strain growth due to the disorder in nucleation and propagation. 
@@ -44,18 +87,20 @@ Deposition temperature affects growth morphology. If deposition temperatures are
 \subsubsection{Birefringence}
 \label{Birefringence}
 \indent
-Birefringece is a technique used to qualitative determine strain in a sample \cite{Raman1944BirefringenceDiamond,Lang1967CausesDiamond, ProfTolansky1964BirefringenceDiamond}. Strain in can arise from a number of sources. Sources of strain in diamond include: dislocations, lattice parameter variation, precipitates and inclusions, fractures, and plastic deformation \cite{Lang1967CausesDiamond}. The presence of internal strain causes local changes in refractive index which is the source of birefringence \cite{Atkins1968QuantumRotation}.
+
+Birefringence is a technique used to qualitative determine strain in a sample \cite{Raman1944BirefringenceDiamond,Lang1967CausesDiamond, ProfTolansky1964BirefringenceDiamond}. Strain in can arise from a number of sources. Sources of strain in diamond include: dislocations, lattice parameter variation, precipitates and inclusions, fractures, and plastic deformation \cite{Lang1967CausesDiamond}. The presence of internal strain causes local changes in refractive index which is the source of birefringence \cite{Atkins1968QuantumRotation}.
 
 To measure birefringence, the substrate is placed between two cross polarizers. If the SCD is completely strain free, the optically isotropic crystal will not have an effect on the light and therefore no light will pass through. In the presence of strain, the polarization of the light incident on the substrate will rotate allowing some light to pass through the second polarizer. The amount of internal strain can be qualified by the intensity of the light. In other words, the brighter the region, the more strain present.
 
 \subsection{Atomic Force Microscopy (AFM)}
 \label{AFM}
 \indent 
+
 Atomic Force Microscopy (AFM) was used to determine the surface roughness of the substrates. Three 10$\mu$m by 10$\mu$m AFM scans were taken at different locations on the sample. The areal average roughness (SA) was calculated for each scan and the average of the three scans was reported. In this work, a Hitachi AFM5100N
 atomic force microscope equipped with a MikroMasch
 HQ:NSC14/Al tip and operating in non-contact mode was used.
 
-Atomic force microscopy was invented by Binnig et. al. in 1986 \cite{BinnigAtomicMicroscope}. The AFM technology drew principles from profilometry and scanning tunneling microscopy to resolve atomic scale features using cantilever arm with an atomically fine tip. The cantilever with an atomically fine tip tracks across the surface producing a two-dimentional profile of vertical height (change in z if considering a Cartesian coordinate system) difference across the horizontal distance traveled (x or y in a Cartesian coordinate system). The atomic scale features include ridges from polishing, morphological features, etch pits, nanofabricated structures, etc. The size, depth, and frequency of features are all elements that contribute to surface roughness. Surface roughness can be calculated in several different ways. Two common ways include average roughness (R\textsubscript{a}) and ten-point height (R\textsubscript{z}). Average roughness reports the average deviation from the mean line over a sampling length, see Equation \ref{RaEQN} \cite{Thomas1981CharacterizationRoughness, Nayak1973SOMEROUGHNESS}. An example of average roughness is shown in Figure \ref{fig:RaGraph}.
+Atomic force microscopy was invented by Binnig et. al. in 1986 \cite{BinnigAtomicMicroscope}. The AFM technology drew principles from profilometry and scanning tunneling microscopy to resolve atomic scale features using cantilever arm with an atomically fine tip. The cantilever with an atomically fine tip tracks across the surface producing a two-dimensional profile of vertical height (change in z if considering a Cartesian coordinate system) difference across the horizontal distance traveled (x or y in a Cartesian coordinate system). The atomic scale features include ridges from polishing, morphological features, etch pits, nanofabricated structures, etc. The size, depth, and frequency of features are all elements that contribute to surface roughness. Surface roughness can be calculated in several different ways. Two common ways include average roughness (R\textsubscript{a}) and ten-point height (R\textsubscript{z}). Average roughness reports the average deviation from the mean line over a sampling length, see Equation \ref{RaEQN} \cite{Thomas1981CharacterizationRoughness, Nayak1973SOMEROUGHNESS}. An example of average roughness is shown in Figure \ref{fig:RaGraph}.
 
 \begin{equation}
     \label{RaEQN}
@@ -105,6 +150,7 @@ Polished diamond surfaces can be characterized using AFM to calculate surface ro
 \subsection{Surface Orientation}
 \label{XRD}
 \indent
+
 The substrate surface orientation can affect growth morphology and defect incorporation \cite{Burns1990GROWTH-SECTORDIAMONDS,Ushizawa1998BoronDiamond,Takeuchi2000HomoepitaxialSubstrates}. A Rigaku Smartlab X-ray Diffractometer (XRD) was used to measure single crystal diamond surface orientation. X-ray diffraction is a technique that uses electromagnetic radiation of x-ray wavelengths ($\lambda$ = 10$^9$ - 10$^{12}$ m) to measure the spacing between crystal planes through constructive and destructive interference patterns of x-rays reflected off of atoms in an ordered structure. Bragg's Law, shown in equation \ref{braggslaw}, is the foundation of this technique where \textit{n} is the diffraction order, $\lambda$ is the wavelength of the x-rays being used (Cu K$\alpha_2$ = 1.54 \AA), \textit{d} is the spacing between crystal planes, and $\theta$ describes the angle at which constructive interference occurs and is called the Bragg angle \cite{BraggTheCrystals,Maskil1988StructureLine}.
 
 \begin{equation}
@@ -140,6 +186,7 @@ To take an offcut measurement, with 2$\theta$ fixed an omega scan can me taken o
 \section{Fourier Transform Infrared Spectroscopy}
 \label{FTIR}
 \indent
+
 A Shimadzu IRTracer-100 Fourier Transform Infrared (FTIR) Spectrometer was the first technique used to characterize single crystal diamond seeds and deposited chemical vapor deposition films. A custom sample holder for room temperature measurements, shown in Figure \ref{fig:FTIRSampleHolder}, was designed to be inserted into the default film holder included with the instrumentation. Modularity was designed so that several sample sizes could be accommodated by replacing or removing the smallest component, the sample spacer,  with the size needed for a specific sample (up to 6.6 mm square), or the plate with the recess for the sample spacer could be remade to accommodate samples larger than 6.6 mm square.
 
 \begin{figure}
@@ -149,7 +196,7 @@ A Shimadzu IRTracer-100 Fourier Transform Infrared (FTIR) Spectrometer was the f
     \label{fig:FTIRSampleHolder}
 \end{figure}
 
-FTIR has long been used to characterize diamond defects using the infrared absorption spectrum \cite{Clark1955TheDiamonds, Davies1977TheDiamond, Zaitsev2001}.  Several nitrogen related defects absorb in infrared wavelengths, specifically in 1050 cm\textsuperscript{-1} to 1400 cm\textsuperscript{-1} region.  Neutral single substituional nitrogen (N\textsubscript{S}\textsuperscript{0}), also known as P1 centers or C centers, absorbs at 1130 cm\textsuperscript{-1} and 1344 cm\textsuperscript{-1} \cite{Zaitsev2001,Edmonds2021}; Nitrogen platelets absorb at 1280 cm\textsuperscript{-1} and between 1358 cm\textsuperscript{-1} and 1380 cm\textsuperscript{-1}\cite{Chrenko1971DispersedDiamonds, Woods1986PlateletsDiamonds}; Positive substituional nitrogen N\textsubscript{S}\textsuperscript{+}\cite{Lawson1998OnDiamond,Fisher2009BrownTreatment,PhysRevB.73.125203}; B centers or P2 centers which consist of four nitrogen atoms and a vacancy (N\textsubscript{4}V) absorbs at 1175 cm\textsuperscript{-1} \cite{Zaitsev2001}, and two adjacent nitrogen atoms, called A centers, absorb at 1215 cm\textsuperscript{-1} \cite{Zaitsev2001}. Because these measurements were taken at room temperature, the absorption peaks are broadened by thermal broadening. This makes it difficult to resolve individual absorption peaks across the  1050 cm\textsuperscript{-1} to 1400 cm\textsuperscript{-1} region. By fitting the region of interest with all six relevant, nitrogen related peaks, a more accurate fit can be made which increases the accuracy of individual absorption peak intensities and location. The results of this method are shown in figure \ref{fig:FTIRfitFTD2417a}.
+FTIR has long been used to characterize diamond defects using the infrared absorption spectrum \cite{Clark1955TheDiamonds, Davies1977TheDiamond, Zaitsev2001}. Additionally, FTIR was used to determine boron concentration in diamond based on peak associated with vibration mode of boron in diamond \cite{Demlow2014TheDiamond}. Several nitrogen related defects absorb in infrared wavelengths, specifically in 1050 cm\textsuperscript{-1} to 1400 cm\textsuperscript{-1} region.  Neutral single substituional nitrogen (N\textsubscript{S}\textsuperscript{0}), also known as P1 centers or C centers, absorbs at 1130 cm\textsuperscript{-1} and 1344 cm\textsuperscript{-1} \cite{Zaitsev2001,Edmonds2021}; Nitrogen platelets absorb at 1280 cm\textsuperscript{-1} and between 1358 cm\textsuperscript{-1} and 1380 cm\textsuperscript{-1}\cite{Chrenko1971DispersedDiamonds, Woods1986PlateletsDiamonds}; Positive substituional nitrogen N\textsubscript{S}\textsuperscript{+}\cite{Lawson1998OnDiamond,Fisher2009BrownTreatment,PhysRevB.73.125203}; B centers or P2 centers which consist of four nitrogen atoms and a vacancy (N\textsubscript{4}V) absorbs at 1175 cm\textsuperscript{-1} \cite{Zaitsev2001}, and two adjacent nitrogen atoms, called A centers, absorb at 1215 cm\textsuperscript{-1} \cite{Zaitsev2001}. Because these measurements were taken at room temperature, the absorption peaks are broadened by thermal broadening. This makes it difficult to resolve individual absorption peaks across the  1050 cm\textsuperscript{-1} to 1400 cm\textsuperscript{-1} region. By fitting the region of interest with all six relevant, nitrogen related peaks, a more accurate fit can be made which increases the accuracy of individual absorption peak intensities and location. The results of this method are shown in figure \ref{fig:FTIRfitFTD2417a}.
 
 \begin{figure}
     \centering
@@ -179,6 +226,7 @@ A method to determine the concentration of N\textsubscript{S}\textsuperscript{0}
 \section{Ultra-violet and Visible Spectroscopy}
 \label{UVVis}
 \indent
+
 The next technique used to characterize defects was Ultra-Violet and Visible (UV-Vis) Spectroscopy on a Shimadzu UV-3600 UV-VIS-NIR Spectrophotometer with integrating sphere attachment. The integrating sphere is an attachment often used for samples with high surface reflections or internal scattering to achieve high efficiency and low error without the need for a photomultiplier tube \cite{Castiglioni2000AnSamples,Jacquez1955TheorySphere}. Ultra-violet and visible spectroscopy is useful in diamond characterization because many commonly found defects in diamond absorb in ultra-violet and visible wavelengths. In fact, crystalline defects absorbing visible wavelengths in the otherwise transparent diamond host is the reason some diamonds appear colored \cite{Collins2003TheSpectroscopy,Fisher2009BrownDefects, Gaillou2010SpectroscopicDiamonds} . For example, vacancy clusters absorb at 360 nm \cite{Jones2009DislocationsDiamond},  NVH\textsuperscript{0} defects absorb at 520 nm \cite{Khan2013Colour-causingDiamond}, and neutral single substitutional nitrogen (N\textsubscript{S}\textsuperscript{0}) defects absorb at 270 nm \cite{Chrenko1971DispersedDiamonds}. These defects are particularly interesting because they do not overlap with the broad absorption features  other common defects, the negative (NV\textsuperscript{-}) and neutral (NV\textsuperscript{0}) nitrogen vacancy defects, produce when characterizing via UV-Vis. The negative (NV\textsuperscript{-}) and neutral (NV\textsuperscript{0}) nitrogen vacancy defects can be characterized using other techniques, such as Photoluminescent spectroscopy, and will be described in more detail in Section \ref{PL}.
 
 A typical ultra-violet and visible spectrum of an ultra pure single crystal diamond with very low defect concentrations shows low or no absorption at ultra-violet and visible wavelength below the band gap energy.  An example of a UV-Vis spectrum is shown in Figure \ref{fig:ELSCDUVVis}.
@@ -202,6 +250,7 @@ Ultra-violet and visible spectroscopy has been used to quantify low concentratio
 \section{Raman Spectroscopy}
 \label{Raman}
 \indent
+
 Raman spectroscopy is a non-destructive method to differentiate allotropes of carbon, diamond versus graphite, through probing bonding structure, crystallinity, and disorder \cite{Knight1989CharacterizationSpectroscopy, Shroder1990AnalysisSpectroscopyb}. Raman spectroscopy is fundamentally the use of Raman scattering to understand differences in bonding configurations due to lattice vibrations. The first order diamond, \textit{sp\textsuperscript{3}} carbon, Raman line occurs at 1332 cm\textsuperscript{-1}. Graphitic carbon, \textit{sp\textsuperscript{2}}, has two bands that correspond to different vibrational modes. The first band, called the D band, occurs at 1350 cm\textsuperscript{-1}. The D band is associated with disorder in the graphitic structure. The second bad, called the G band, occurs at 1580 cm\textsuperscript{-1}. Graphitic carbon produces a more intense Raman spectrum. This allows diamond researchers to detect a small amount of graphite in diamond films. 
 
 Raman spectra were originally taken on a Horiba LabRAM ARAMIS Raman spectrometer that uses 532 nm excitation. After the completion of the QuOD optics lab, Raman data was extracted from the photoluminescent data using methods described in Section \ref{PL} and on the experimental setup shown in Figure \ref{fig:PLsetup} which was equiped with 532 nm excitation and 693 nm excitation. 
@@ -209,6 +258,7 @@ Raman spectra were originally taken on a Horiba LabRAM ARAMIS Raman spectrometer
 \section{Photoluminescence Spectroscopy}
 \label{PL}
 \indent
+
 Photoluminescent spectroscopy was used to qualitatively compare the quantity of defects, such as the nitrogen vacancy defect and silicon vacancy defect \cite{CollinsTheSpectroscopy}. Each defect has a unique luminescence based on its electronic structure, so long as it exists within the band gap of the host material. In this technique, the sample is illuminated using a chosen excitation wavelength. The excitation wavelength should be less than the band gap to prevent production of electron hole pairs. Additionally, the excitation wavelength may be strategically chosen to selectively excite defects while not providing sufficient energy to excite other. After excitation, a spectrum is taken on the luminescence of the sample. Each defect will luminesce at a wavelength equivalent to the energy difference between the excited state and the ground state; This luminescence is called the zero-phonon line. The zero-phonon line for NV\textsuperscript{-} and NV\textsuperscript{0} are 637 nm and 575 nm, respectively \cite{Fraczek2017LaserDiamond}. A schematic of the home-built experimental setup used in this work is shown in Figure \ref{fig:PLsetup}. The setup was later modified to accommodate two different excitation wavelengths (532 nm and 695 nm) with largely the same setup. The excitation pathway was switched by strategic flip mirror placement.
 
 \begin{figure}
@@ -221,6 +271,7 @@ Photoluminescent spectroscopy was used to qualitatively compare the quantity of 
 \section{Electron Paramagnetic Resonance (EPR)}
 \label{EPR}
 \indent
+
 Electron paramagnetic resonance (EPR) is a non-destructive method to determine the number of electron spins in a sample which has been used not only to quantify diamond defects but also to validate UV-Vis and FTIR methods to quantify defects \cite{Nadolinny1999EPRNitrogen,Nadolinny2025DefectDiamonds, Loubser1978ElectronDiamond}. Electrons will resonate with different frequencies depending on their surroundings producing a characteristic peak location and splitting depending on the type of defect. For nitrogen related defects in diamond, magnetic field was swept from 2600 G to 4000 G. The P1 and P2 center in diamond exhibits an EPR signal at 3495 G (g=2.0023) \cite{Hoinkis1991ParamagneticFilms,Smith1959Electron-SpinDiamond,VanWyk1997TheDiamond}. The NV\textsuperscript{-} defect produces an EPR signal in the wings of the P1 and P2 center single \cite{Redman1991SpinSpectroscopy}. In this work, a Bruker EMX-plus spectrometer operating at X-band (9.32 GHz) frequencies was used.
 
 An EPR signal is the first derivative of absorption. To quantify the number of spins contributing to each signal, a double integral over the signal must be computed and converted to spin concentration using a calibration curve. A calibration curve was made using a stable radical with a comparable g-value  $\alpha$,$\gamma$-bisdiphenylene-$\beta$-phenylallyl, or BDPA. A serial dilution of BDPA in potassium bromide (KBr), a non-EPR active solid, to create six calibration elements that spanned the expected concentration range.
