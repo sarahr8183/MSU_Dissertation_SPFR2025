@@ -3,7 +3,7 @@
 \indent
 
 
-This chapter will discuss several different types of microwave plasma assisted chemical vapor deposition (CVD) diamond reactors and substrate surface preparation techniques used in the research in this dissertation. Surface preparation techniques for single crystal diamond substrates, such as diamond polishing, hydrogen plasma etching, and reactive ion etching, will be introduced. Then, a brief introduction to microwave plasma reactors will be provided. Next, the bell jar style and NIRIM style reactor will be discussed. Finally, the diamond reactor used in this dissertation will be detailed.
+This chapter will discuss several different types of microwave plasma assisted chemical vapor deposition (CVD) diamond reactors and substrate surface preparation techniques used in the research in this dissertation. Surface preparation techniques for single crystal diamond substrates, such as diamond polishing, hydrogen plasma etching, and reactive ion etching, will be introduced. Then, a brief introduction to microwave plasma reactors will be provided. Next, resonant chamber and NIRIM style CVD reactor will be discussed. Finally, the diamond reactor used in this dissertation will be detailed.
 
 \section{Substrate Surface Preparation}
 \indent
@@ -14,7 +14,7 @@ The control of the diamond surface condition of the growth substrate is importan
 
 The surface condition of single crystal diamond can be altered by mechanically abrasive polishing techniques similar to other materials like metals \cite{ASTMInternational2025GuideSpecimens}. In order to polish a material, the material being polished must be softer than the material doing the polishing \cite{Schuelke2013DiamondPolishing, Ranjan2019}. This is because the harder material will remain intact while pieces of the softer material will be physically removed \cite{Malshe1999ASubstrates}.
 
-If a large amount of material needs to be removed, polishing can be done incrementally starting with a course grit and progressively reducing the grit until the desired surface finish is achieved; this can be qualitatively measured using atomic force microscopy as described in section \ref{AFM}. If material removal is not necessary and polishing is just being done to finish the surface, a single, fine grit can be used.
+If a large amount of material needs to be removed, polishing can be done incrementally starting with a course grit and progressively reducing the grit until the desired surface finish is achieved; this can be qualitatively measured using atomic force microscopy as described in Section \ref{AFM}. If material removal is not necessary and polishing is just being done to finish the surface, a single, fine grit can be used.
 
 A typical polishing setup includes a rotating wheel, typically cast iron, to produce a force due to friction \cite{Ivanov2015ExperimentalReactor}. The wheel is coated with an abrasive powder, typically micron-sized diamond, and a binder, typically olive oil. The surface to be polished is placed in contact with the rotating, coated polishing wheel. A load is applied to the surface to be polished to increased the friction force. The abrasive powder can be reapplied throughout the polishing to improve polishing efficiency.
 
@@ -32,6 +32,7 @@ Mechanical polishing of diamond is a surface conditioning technique that can be 
 \subsection{Hydrogen Plasma Etching}
 \label{H2PlasmaEtch}
 \indent
+
 Another way to alter the surface condition of single crystal diamond is through hydrogen plasma etching to remove atoms from the surface of the diamond substrate. This technique chemically removes nanometer layers atom-by-atom \cite{Ivanov2015ExperimentalReactor,Ri2006HydrogenDiamond}. Hydrogen plasma etching is a common surface treatment technique in microwave plasma assisted chemical vapor deposition of diamond because the reactor setup for diamond growth requires no modifications to produce a hydrogen plasma for etching. 
 
 In a hydrogen plasma, diatomic hydrogen gas is broken down into radical, atomic hydrogen. Atomic hydrogen is highly reactive. The reactive species interact with the surface of the diamond to form monomolecule methylene (CH$_2$) that can be abstracted with the atomic hydrogen, as shown in Figure \ref{fig:H2Etch} \cite{Battaile1999EtchingDiamond}.
@@ -46,18 +47,22 @@ In a hydrogen plasma, diatomic hydrogen gas is broken down into radical, atomic 
 \subsection{Reactive Ion Etching}
 \label{RIE}
 \indent
-Reactive ion etching (RIE) is a surface treatment that chemically and physically removes nanometer layers of material \cite{Oehrlein1986Reactive-ionEtching}. Reactive ion etching of diamond is commonly done with CF$_4$, O$_2$, and H$_2$ plasmas \cite{Sandhu1989ReactiveDiamond,AndoSmoothDiamond,Chu1997ReactiveSubstrates}.
+
+Reactive ion etching (RIE) is a plasma-based surface treatment that chemically and physically removes nanometer layers of material \cite{Oehrlein1986Reactive-ionEtching}. Reactive ion etching of diamond is commonly done with CF$_4$, O$_2$, and H$_2$ plasmas \cite{Sandhu1989ReactiveDiamond,AndoSmoothDiamond,Chu1997ReactiveSubstrates}. Chemical removal of material occurs by reactive species within the plasma interacting with the diamond surface to create monomolecules that desorb from the surface, similiar to the hydrogen etching process. In addition to chemical removal, physical, or ballistic, removal of material occurs through high energy species within the plasma being accelerated towards the substrate. Unlike hydrogen plasma etching, this process typically requires a separate reactor than the reactor used for CVD synthetic diamond growth.
 
 \section{Microwave Plasma Assisted Chemical Vapor Depositions Diamond Reactors}
 \indent
-Microwave plasma reactors are a subset of chemical vapor deposition reactors. As discussed in chapter \ref{chIntro}, HPHT diamond recators preceded CVD diamond reactors. The HPHT technique was developed to establish the thermodynamically favorable conditions for diamond growth. CVD reactors utilize reaction kinetics at the surface of a diamond seed to begin diamond growth. In CVD reactors, the vapor phase contains a carbon species, typically methane, which reacts with a solid surface, a diamond seed, to grow diamond one carbon-carbon bond at a time. Graphitic carbon-carbon bonds can also form during the CVD process \cite{Liou1989Low-temperatureDeposition,Bachmann1991DIAMONDDEPOSITION}. To mitigate this, a predominately hydrogen plasma is used to preferentially etch away the $sp^2$ bonded carbon, graphite.
 
-The reaction between the vapor phase and solid surface needs energy to progress the reaction. This activation energy has been achieved using a heat source, such as in hot filament style reactors. Alternatively, a microwave supply can be used to generate a plasma and achieve the activation energy. Microwaves are coupled to a resonant chamber which couples to the gas phase creating radical reactive species. Two variations of microwave plasma assisted CVD reactors are the bell jar style reactor and the NIRIM style reactor. These two reactor types will be discussed in greater detail in sections \ref{NIRIM} and \ref{ASTEX} respectively.
+Microwave plasma assisted reactors are a subset of CVD reactors. As discussed in Chapter \ref{chIntro}, HPHT diamond reactors preceded CVD diamond reactors. The HPHT technique was developed to establish the thermodynamically favorable conditions for diamond growth. CVD reactors utilize reaction kinetics at the surface of a diamond seed to begin diamond growth. In CVD reactors, the vapor phase contains a carbon species, typically methane, which reacts with a solid surface, a diamond seed, to grow diamond one carbon-carbon bond at a time. Graphitic carbon-carbon bonds can also form during the CVD process \cite{Liou1989Low-temperatureDeposition,Bachmann1991DIAMONDDEPOSITION}. To mitigate this, a predominately hydrogen plasma is used to preferentially etch away the $sp^2$ bonded carbon, graphite.
+
+The reaction between the vapor phase and solid surface needs energy to progress the reaction. This activation energy has been achieved using a heat source, such as in hot filament style reactors. Alternatively, a microwave supply can be used to generate a plasma and achieve the activation energy. Microwaves are coupled to a resonant chamber which couples to the gas phase creating radical reactive species. Three variations of microwave plasma assisted CVD reactors are the NIRIM style reactor, resonant chamber reactors, and bell jar style reactors. These three reactor types will be discussed in greater detail in Sections \ref{NIRIM} - \ref{DS4}.
 
 
 \subsection{NIRIM Style Reactor}
 \label{NIRIM}
-The first style of microwave plasma assisted reactor designed was the NIRIM reactor \cite{Kamo1983DiamondPlasma}. A schematic of this reactor style is shown in Figure \ref{fig:NIRIM}. Here, a quartz tube in inserted into a rectangular microwave waveguide and a laminar flow of process gases are flown over through the quartz tube \cite{Matsumoto1982GrowthGas}. The microwaves couple to the gas phase within the quartz tube to create a plasma above the sample. This reactor style has significant size constraints, however the laminar flow of process gases is ideal for creating delta doped layered structures that is needed for ideal laser writing substrates. 
+\indent 
+
+The first design of a microwave plasma assisted CVD diamond reactor was the NIRIM reactor \cite{Kamo1983DiamondPlasma}. A schematic of this reactor style is shown in Figure \ref{fig:NIRIM}. Here, a quartz tube in inserted into a rectangular microwave waveguide and a laminar flow of process gases are flown through the quartz tube \cite{Matsumoto1982GrowthGas}. The microwaves couple to the gas phase within the quartz tube to create a plasma above the sample. This reactor style has significant size constraints, however the laminar flow of process gases is ideal for creating the delta doped layered structures needed for ideal laser writing substrates. 
 
 \begin{figure}
     \centering
@@ -70,6 +75,7 @@ The first style of microwave plasma assisted reactor designed was the NIRIM reac
 \subsection{ASTeX Style Resonant Chamber Reactor}
 \label{ASTEX}
 \indent
+
 A larger resonant chamber reactor was designed by Bachmann and team in the late 1980s \cite{Bachmann1991DIAMONDDEPOSITION,Prelas1998HANDBOOKFILMS}. Later, Applied Science Technology Inc. (ASTeX) commercialized this reactor. This reactor creates a single mode plasma inside a resonant chamber directly above the sample. A schematic of this reactor style is shown in Figure \ref{fig:ASTeX}. Process gases are flown into the chamber. A microwave resonant cavity creates a standing wave that generates a spherical plasma.
 
 \begin{figure}
@@ -80,11 +86,10 @@ A larger resonant chamber reactor was designed by Bachmann and team in the late 
 \end{figure}
 
 \subsection{MSU Style Diamond System 4}
-\indent 
 \label{DS4}
-The MSU style diamond reactor is a bell jar style reactor that was patented in 1994 \cite{Asmussen1994APPARATUSPLASMA}. A schematic for Diamond System 4 (DS4), an MSU style reactor, is shown in Figure \ref{fig:DS4Schematic}. The MSU style reactor generates a disk shaped plasma as opposed to the spherical plasma generated in the ASTEX style reactor. The disk shape plasma is generated by encapsulating one node of the standing wave in the quartz bell jar. DS4 was designed and optimized for growth of large single crystal diamond wafers. For this reason, the encapsulated node was designed to be wider and flatter, a pancake shape, such that a larger surface area diamond wafer saw a more uniform plasma across the surface area. DS4, a high power reactor, was optimized to increase growth rate through pressure and methane concentrations achieving 60-80 $\mu m$/hr growth rates \cite{Gu2012}.
+\indent
 
-\textcolor{red}{describe how temperature is measured}
+The MSU style diamond reactor is a bell jar style reactor that was patented in 1994 \cite{Asmussen1994APPARATUSPLASMA}. A schematic for Diamond System 4 (DS4), an MSU style reactor, is shown in Figure \ref{fig:DS4Schematic}. The MSU style reactor generates a disk shaped plasma as opposed to the spherical plasma generated in the ASTEX style reactor. The disk shape plasma is generated by encapsulating one node of the standing wave in the quartz bell jar. DS4 was designed and optimized for growth of large single crystal diamond wafers. For this reason, the encapsulated node was designed to be wider and flatter, a pancake shape, such that a larger surface area diamond wafer saw a more uniform plasma across the surface area. DS4, a high power reactor, was optimized to increase growth rate through pressure and methane concentrations achieving 60-80 $\mu m$/hr growth rates \cite{Gu2012}. DS4 was the reactor used for all diamond growth presented in this dissertation.
 
 \begin{figure}[h]
     \centering
@@ -93,7 +98,7 @@ The MSU style diamond reactor is a bell jar style reactor that was patented in 1
     \label{fig:DS4Schematic}
 \end{figure}
 
-DS4 had success in growing large single crystal diamond plates, via mosaic tile growth and sample holder design, at high growth rates \cite{Bai2024DiamondSystem, DiazLARGERPROCESS}. To use this reactor to optimize nitrogen incorporation, the entire stable operation region should be explored. The stable operation region was defined by recording the substrate temperature as pressure and microwave power were swept over conditions where a plasma could be maintained, results are show in Figure \ref{fig:DS4StableRegion}. DS4 was the reactor used for all diamond growth presented in this dissertation.
+DS4 had success in growing large single crystal diamond plates, via mosaic tile growth and sample holder design, at high growth rates \cite{Bai2024DiamondSystem, DiazLARGERPROCESS}. To use this reactor to optimize nitrogen incorporation, the entire stable operation region should be explored. The stable operation region was defined by recording the substrate temperature as pressure and microwave power were swept over conditions where a plasma could be maintained, results are show in Figure \ref{fig:DS4StableRegion}. The temperature was measured with an optical pyrometer. Optical pyrometers detect changes in a blackbody radiation curve by measuring the absorbance at a specific wavelength. The absorbance at the given wavelength for the sample is compared to the absorbance at the specific wavelength for a reference blackbody radiation curve for a set emissivity. This difference is used to determine the temperature.
 
 \begin{figure}
     \centering
@@ -102,4 +107,4 @@ DS4 had success in growing large single crystal diamond plates, via mosaic tile 
     \label{fig:DS4StableRegion}
 \end{figure}
 
-In summary, single crystal diamond growth via chemical vapor deposition is a difficult task that requires fine control over all inputs. Substrate surface condition can be controlled via mechanical polishing, hydrogen plasma etching, and reactive ion etching. Reactor parameters vary depending on the style of the reactor. For microwave plasma assisted CVD reactors, these parameter include: substrate temperature, reactor pressure, microwave power, gas phase composition, gas flow composition, and resonant chamber design. The research presented in the remainder of this dissertation will vary the afore mentioned inputs to improve deposition of substrates for laser writing.
+In summary, single crystal diamond growth via chemical vapor deposition is a difficult task that requires fine control over all inputs. Substrate surface condition can be controlled via mechanical polishing, hydrogen plasma etching, and reactive ion etching. Reactor parameters vary depending on the style of the reactor. For microwave plasma assisted CVD reactors, these parameter include: substrate temperature, reactor pressure, microwave power, gas phase composition, gas flow properties, and resonant chamber design. The research presented in the remainder of this dissertation will vary the afore mentioned inputs to improve deposition of substrates for laser writing.
