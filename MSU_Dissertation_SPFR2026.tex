@@ -67,11 +67,11 @@
 \begin{abstract}
 \indent
 
-Quantum sensing holds great potential for many intriguing applications such as vector magnetometry for magnetic field navigation in GPS disallowed scenarios and nanoscale magnetic resonance imaging (MRI). The negatively charged nitrogen vacancy defect (NV$^-$) in diamond is a promising candidate for quantum sensing applications. A key advantage of the NV$^−$ is its atomic size, which enables extraordinary spatial precision by single centers placed deterministically with minimal damage to the surrounding diamond lattice.  This has been accomplished with ultrafast laser writing, however the defect creation process, which creates vacancies in the diamond lattice with a femtosecond laser pulse and then diffuses them at lower laser power until they find single substitutional nitrogen atoms to form the NV\textsuperscript{−} centers, requires a very particular kind of substrate. The diamond lattice needs to contain sufficient substitutional nitrogen to allow for the NV\textsuperscript{−} formation but also needs to have a very low background of NV\textsuperscript{− }so that the written defects are single centers and distinguishable during the writing process. Furthermore, the high index of refraction of diamond causes the laser focal spot to be extended in the direction of the writing beam, and therefore the NV\textsuperscript{−} formation can occur far away from the surface where their sensitivity would be the highest. 
+Quantum sensing holds great potential for many intriguing applications such as vector magnetometry for magnetic field navigation in GPS disallowed scenarios and nanoscale magnetic resonance imaging (MRI). The negatively charged nitrogen vacancy defect (NV$^-$) in diamond is a promising candidate for quantum sensing applications. A key advantage of the NV$^−$ is its atomic size, which enables extraordinary spatial precision by single centers placed deterministically with minimal damage to the surrounding diamond lattice.  This has been accomplished with ultrafast laser writing, however the defect creation process, which creates vacancies in the diamond lattice with a femtosecond laser pulse and then diffuses them at lower laser power until they find single substitutional nitrogen atoms to form the NV$^-$ centers, requires a very particular kind of substrate. The diamond lattice needs to contain sufficient substitutional nitrogen to allow for the NV$^-$ formation but also needs to have a very low background of NV$^-$so that the written defects are single centers and distinguishable during the writing process. Furthermore, the high index of refraction of diamond causes the laser focal spot to be extended in the direction of the writing beam, and therefore the NV$^-$ formation can occur far away from the surface where their sensitivity would be the highest. 
 
 A materials engineering challenge, developing ideal laser writing substrates, aimed at improving resolution of quantum sensors through fabrication of arrays of single NV$^-$ centers was explored in this work. The ideal single crystal diamond (SCD) substrate contains a delta doped layer of single substitutional nitrogen to overcome the inaccuracy in depth placement, and very low NV$^-$ background. A parametric study of a bell jar style microwave plasma assisted chemical vapor deposition (CVD) reactor was performed to address this materials engineering challenge. The effects of substrate temperature, reactor pressure, substrate offcut, and substrate surface preparation on the incorporation of nitrogen related defects was determined using characterization techniques including Fourier-transform infrared spectroscopy (FTIR), Ultra-violet spectroscopy (UV-Vis), Raman spectroscopy, photoluminescent (PL) spectroscopy, Atomic Force Microscopy (AFM), Differential Interference Contrast Microscopy (DICM), and Electron Paramagnetic Resonance (EPR). Expansion of the operation region of the CVD reactor to a low growth rate regime was assessed to improve crystalline quality and reduce delta doped layer thickness. Finally, an investigation into surface preparation techniques was completed to normalize the substrate surface condition prior to deposition, ensuring quality growth and improving sensitivity of nitrogen incorporation due to deposition parameters.
 
-This dissertation establishes a surface preparation method to normalize the substrate surface condition. Next, it validates growth quality in a low growth rate regime expanding the operation region of the CVD reactor. Lastly, the sensitivity of nitrogen incorporation caused by varying reactor parameters is investigated. These results elucidate the effectiveness of preparing laser writing substrates in the current bell jar style reactor and more broadly study the factors affecting nitrogen incorporation during CVD growth. 
+This dissertation establishes a surface preparation method to normalize the substrate surface condition. Next, it validates growth quality in a low growth rate regime expanding the operation region of the CVD reactor. Lastly, the sensitivity of nitrogen incorporation caused by varying reactor parameters is investigated. To accurately determine the concentration of substitutional nitrogen, a complex infrared absorption feature was deconvoluted to isolate the absorption due to single substitutional nitrogen defects. The more accurately defined FTIR absorption peak area was calibrated against spin concentration measured via EPR. These results elucidate the effectiveness of preparing laser writing substrates in the current bell jar style reactor and more broadly study the factors affecting nitrogen incorporation during CVD growth. 
 	
 \end{abstract}
 
@@ -98,13 +98,13 @@ I would like to begin by expressing my deepest gratitude to my supervisor, Dr. S
 
 I am grateful my co-advisor, Dr. Jonas Becker, whose diamond in quantum technology knowledge and tough questions during group meetings helped me gain a deeper understanding of my research and its impacts. My committee members, Dr. Alexandra Zevalkink and Dr. Donald Morelli, deserve thanks for their time and the constructive critiques that helped refine my work. A special thanks to the faculty and staff in the Chemical Engineering and Materials Science department as well as the Electrical and Computer Engineering departments at Michigan State University for providing the resources and environment necessary to complete this thesis.
 
-To my colleagues and peers in QuOD labs, thank you for the many hours of brainstorming, technical help, and most importantly the comedic relief. I would specifically like to thank Alex Loomis for his help with sample characterization and fruitful conversations about work and life; Kai Klink for their help with PL and confocal data collection and being a great study partner for quantum mechanics; Ian Morris, Andrew Kirkpatrick, and Logan Crooks for help with confocal microscopy and optics lab troubleshooting; Milos Sretenovic his attention to detail encouraging me to strive for the utmost quality; Theresa Alberth, Ethan Egger, and Nathan Jansen for all their support.
+To my colleagues and peers in QuOD labs, thank you for the many hours of brainstorming, technical help, and most importantly the comedic relief. I would specifically like to thank Alex Loomis for his help with sample characterization and fruitful conversations about work and life; Kai Klink for their help with PL and confocal data collection and being a great study partner for quantum mechanics; Ian Morris, Andrew Kirkpatrick, and Logan Crooks for help with confocal microscopy and optics lab troubleshooting; Milos Sretenovic for his attention to detail encouraging me to strive for the utmost quality; Theresa Alberth, Ethan Egger, and Nathan Jansen for all their support.
 
 Fraunhofer Center Midwest CMW was foundational to my research success. I am thankful to the organization as a whole for providing access to essential data and resources. I am exceptionally grateful to Nina Baule, Aaron Hardy, Robert Rechenberg, Matthias Muehle, Luke Suter, Alex Ho, and Karl Dersch.
 
 I started my research under the supervision of Dr. Elias Garratt whom I would like to extend my appreciation for his support in the early stages of research and connecting me with so many wonderful researchers. Shengyan Bai, thank you for teaching me the nuances of growing diamond in DS4. I could not have done this without your help. Additional thanks goes out to Erik Vyhmeister and Ramon Diaz for sharing their expertise. 
 
-I am deeply indebted to all of my friends for their endless support. Christina, thank you not only for being the cheese to my curd throughout undergrad, but also for pushing me to take on the challenge of a PhD. I, legitimately, would not be here with you. To Chris, Kyra, Samantha, Nathan, Ryan, Alex, and Meghan for always being a constant source of support, perspective, and much needed distractions when things felt overwhelming.
+I am deeply indebted to all of my friends for their endless support. Christina, thank you not only for being the cheese to my curd throughout undergrad, but also for pushing me to take on the challenge of a PhD. I, legitimately, would not be here without you. To Chris, Kyra, Samantha, Nathan, Ryan, Alex, and Meghan for always being a constant source of support, perspective, and much needed distractions when things felt overwhelming.
 
 Finally, I want to thank my family their unwavering belief in me. To my sister, Emily, thank you for your lifelong encouragement. Following in your footsteps wasn't always easy, but navigating new terrain knowing you were standing behind me every step of the way was. To my parents, Tommy and Angel, my brothers, Ben and Andrew, and my in-laws, Becky, Tom, and Ryan, and the rest of the amazing family I am so fortunate to have for the relentless support. Also, to my dog, Louis, for bringing me gifts in the form of his slobbery toys while I was writing. Most importantly, I owe immeasurable appreciation to Sean for being my partner, my best friend, and my rock through the years. Thank you for sticking by me through the long nights and for keeping me grounded when things got difficult.
 
@@ -173,9 +173,30 @@ Finally, I want to thank my family their unwavering belief in me. To my sister, 
 %% following two lines.
 \renewcommand{\appname}{APPENDIX}
 \appendix
-\include{Chapters/AppendixNamingConvention}
 %% To include several appendices, remove the only the "%"
 %% in front of "\appendix".
+
+%%%If only one appendix, insert \include command between the following two lines of code in order to remove the toc entry. You will also need to modify your sub-file, see below.
+\addtocontents{toc}{\protect\setcounter{tocdepth}{-2}}
+\include{Chapters/AppendixNamingConvention}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+
+%%%Then, add the following code to your sub-file
+% \makeatletter
+% \renewcommand{\thechapter}{A} 
+% \setcounter{chapter}{1} 
+% \renewcommand{\chaptername}{Appendix} 
+% \renewcommand{\thechapter}{} 
+% \makeatother
+
+% \chapter{Title of Single Appendix}
+% \label{labelAppendix}
+
+% %The next four (4) lines allows reinstitutes the trailing "A" now that the title of the chapter has printed. It allows for tables and figures to be labeled A.1, A.2, etc. Added by Sarah July, 23, 2026
+% \renewcommand{\thechapter}{A}
+% \setcounter{figure}{0}
+% \setcounter{table}{0}
+% \makeatother
 
 %% In either cast to start your first appendix, which will be labeled
 %% as Appendix A, just type \chapter{<appendix 1 name>}

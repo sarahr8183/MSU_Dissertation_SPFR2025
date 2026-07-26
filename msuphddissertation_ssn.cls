@@ -338,7 +338,7 @@
 \vfill
 \newpage
 %%  The next three lines added 8-2-12
-%\addcontentsline{toc}{chapter}{\textbf{\appname}\textmd{\leaders\hbox to 1em{\hss.\hss}\hfill}}                
+% \addcontentsline{toc}{chapter}{\space\textbf{\appname}\space\textmd{\leaders\hbox to 1em{\hss.\hss}\hfill}}                
 %\thispagestyle{myheadings}
   \setcounter{chapter}{0}%
   \setcounter{section}{0}%
@@ -346,6 +346,7 @@
   \gdef\thechapter{\@Alph\c@chapter}
    \clearpage
  }
+
      
 % Single space the bibliography
 \renewenvironment{thebibliography}[1]
