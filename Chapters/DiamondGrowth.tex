@@ -14,14 +14,14 @@ The control of the diamond surface condition of the growth substrate is importan
 
 The surface condition of single crystal diamond can be altered by mechanically abrasive polishing techniques similar to other materials like metals \cite{ASTMInternational2025GuideSpecimens}. In order to polish a material, the material being polished must be softer than the material doing the polishing \cite{Schuelke2013DiamondPolishing, Ranjan2019}. This is because the harder material will remain intact while pieces of the softer material will be physically removed \cite{Malshe1999ASubstrates}.
 
-If a large amount of material needs to be removed, polishing can be done incrementally starting with a course grit and progressively reducing the grit until the desired surface finish is achieved; this can be qualitatively measured using atomic force microscopy as described in Section \ref{AFM}. If material removal is not necessary and polishing is just being done to finish the surface, a single, fine grit can be used.
+If a large amount of material needs to be removed, polishing can be done incrementally starting with a course grit and progressively reducing the grit until the desired surface finish is achieved; this can be quantitatively measured using atomic force microscopy as described in Section \ref{AFM}. If material removal is not necessary and polishing is just being done to finish the surface, a single, fine grit can be used.
 
 A typical polishing setup includes a rotating wheel, typically cast iron, to produce a force due to friction \cite{Ivanov2015ExperimentalReactor}. The wheel is coated with an abrasive powder, typically micron-sized diamond, and a binder, typically olive oil. The surface to be polished is placed in contact with the rotating, coated polishing wheel. A load is applied to the surface to be polished to increased the friction force. The abrasive powder can be reapplied throughout the polishing to improve polishing efficiency.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.5\linewidth]{figures/DiamondPolishing.png}
-    \caption{Diagram of polishing setup}
+    \includegraphics[width=0.7\linewidth]{figures/DiamondPolishing.png}
+    \caption{Diagram of polishing setup.}
     \label{fig:polishingsteup}
 \end{figure}
 
@@ -40,7 +40,7 @@ In a hydrogen plasma, diatomic hydrogen gas is broken down into radical, atomic 
 \begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{figures/HydrogenEtching.png}
-    \caption{A schematic showing the hydrogen etch process on an atomic level. Hydrogen removes carbon from the diamond structure by creating CH\textsubscript{3} groups that desorb from the as methane when a hydrogen radical is present.}
+    \caption{A schematic showing the hydrogen etch process on an atomic level. Hydrogen removes carbon from the diamond structure by creating CH\textsubscript{3} groups that desorb from the surface as methane when a hydrogen radical is present.}
     \label{fig:H2Etch}
 \end{figure}
 
@@ -50,7 +50,7 @@ In a hydrogen plasma, diatomic hydrogen gas is broken down into radical, atomic 
 
 Reactive ion etching (RIE) is a plasma-based surface treatment that chemically and physically removes nanometer layers of material \cite{Oehrlein1986Reactive-ionEtching}. Reactive ion etching of diamond is commonly done with CF$_4$, O$_2$, and H$_2$ plasmas \cite{Sandhu1989ReactiveDiamond,Ando2002SmoothDiamond}. Chemical removal of material occurs by reactive species within the plasma interacting with the diamond surface to create monomolecules that desorb from the surface, similiar to the hydrogen etching process. In addition to chemical removal, physical, or ballistic, removal of material occurs through high energy species within the plasma being accelerated towards the substrate. Unlike hydrogen plasma etching, this process typically requires a separate reactor than the reactor used for CVD synthetic diamond growth.
 
-In this work, an inductively coupled plasma reactive ion etch (ICP-RIE) was used. The gas phase of the plasma consisted of oxygen (O\textsubscript{2}), argon (Ar), and sulfur hexaflouride (SF\textsubscript{6}) at flow rates of 35 sccm, 20 sccm, and 3 sccm, respectively, with the chamber pressure set to 10 mTorr. ICP power, also known as coil power, was set to 500W. RIE power, also known as platen power, was set to 150W. An etch rate of approximately 134 nm/min was estimated based on trials from a separate NDT seed with a (111) surface orientation.
+In this work, an inductively coupled plasma reactive ion etch (ICP-RIE) was used. The gas phase of the plasma consisted of oxygen (O\textsubscript{2}), argon (Ar), and sulfur hexaflouride (SF\textsubscript{6}) at flow rates of 35 sccm, 20 sccm, and 3 sccm, respectively, with the chamber pressure set to 10 mTorr. ICP power, also known as coil power, was set to 500W. RIE power, also known as platen power, was set to 150W. An etch rate of approximately 134 nm/min was estimated based on trials from an NDT seed with a (111) surface orientation.
 
 \subsection{Diamond Film Removal via Laser Cutting}
 \label{lasercutting}
@@ -74,7 +74,7 @@ The first design of a microwave plasma assisted CVD diamond reactor was the NIRI
 
 \begin{figure}
     \centering
-    \includesvg[width=0.8\linewidth]{figures/NIRIM.svg}
+    \includegraphics[width=1\linewidth]{figures/NIRIM.png}
     \caption{The schematic, adapted from \cite{Kamo1983DiamondPlasma, Matsumoto1982GrowthGas}, depicts a NIRIM style chemical vapor deposition reactor.}
     \label{fig:NIRIM}
 \end{figure}
@@ -84,12 +84,12 @@ The first design of a microwave plasma assisted CVD diamond reactor was the NIRI
 \label{ASTEX}
 \indent
 
-A larger resonant chamber reactor was designed by Bachmann and team in the late 1980s \cite{Bachmann1991DiamondDeposition,Prelas1998HANDBOOKFILMS}. Later, Applied Science Technology Inc. (ASTeX) commercialized this reactor. This reactor creates a single mode plasma inside a resonant chamber directly above the sample. A schematic of this reactor style is shown in Figure \ref{fig:ASTeX}. Process gases are flown into the chamber. A microwave resonant cavity creates a standing wave that generates a spherical plasma.
+A larger resonant chamber reactor was designed by Bachmann and team in the late 1980s \cite{Bachmann1992DiamondTechnologies, Prelas1998HandbookFilms}. Later, Applied Science Technology Inc. (ASTeX) commercialized this reactor. This reactor creates a single mode plasma inside a resonant chamber directly above the sample. A schematic of this reactor style is shown in Figure \ref{fig:ASTeX}. Process gases are flown into the chamber. A microwave resonant cavity creates a standing wave that generates a spherical plasma.
 
 \begin{figure}
     \centering
-    \includesvg[width=0.5\linewidth]{figures/ASTeX.svg}
-    \caption{The schematic, adapted from \cite{Bachmann1991DiamondDeposition}, depicts a ASTeX style chemical vapor deposition reactor.}
+    \includegraphics[width=0.6\linewidth]{figures/ASTeX.png}
+    \caption{The schematic, adapted from \cite{Bachmann1992DiamondTechnologies}, depicts a ASTeX style chemical vapor deposition reactor.}
     \label{fig:ASTeX}
 \end{figure}
 
@@ -111,7 +111,7 @@ DS4 had success in growing large single crystal diamond plates, via mosaic tile 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\linewidth]{figures/DS4_optimization_2022.png}
-    \caption{Stable operation region of Diamond System 4 (DS4)}
+    \caption{Stable operation region of Diamond System 4 (DS4).}
     \label{fig:DS4StableRegion}
 \end{figure}
 
